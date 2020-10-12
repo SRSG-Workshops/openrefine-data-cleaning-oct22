@@ -10,7 +10,7 @@
 carpentry: "dc"
 
 # Overall title for pages.
-title: "Data Cleaning with OpenRefine for Ecologists"
+title: "Data Cleaning with OpenRefine"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
@@ -26,6 +26,7 @@ repository: <USERNAME>/<PROJECT>
 
 # Email address, no mailto:
 email: "team@carpentries.org"
+contact_url: "https://rsgsoton.net/contact/"
 
 # Sites.
 amy_site: "https://amy.software-carpentry.org/workshops"

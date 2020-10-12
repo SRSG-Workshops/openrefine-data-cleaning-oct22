@@ -8,7 +8,7 @@ root: .
 > sciences](https://datacarpentry.org/lessons/#social-science-curriculum) curricula.
 {: .testimonial} 
 
-An important part of the data analysis pipeline is preparing the data for analysis. Some of this
+An important part of the data analysis pipeline is preparing data for analysis. Some of this
 involves data cleaning, where errors in the data are identified and corrected 
 or data structure and formatting made consistent. This step must be taken with the same care and attention
 to reproducibility as the data analysis itself.
