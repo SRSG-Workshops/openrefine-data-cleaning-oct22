@@ -39,7 +39,7 @@ but OpenRefine
 
   - OpenRefine is a Java program that runs on your machine (not in the cloud): it is a desktop application that uses your web browser as a graphical interface. No internet connection is needed, and none of the data or commands you enter in OpenRefine are sent to a remote server.
   - OpenRefine does not modify your original dataset. All actions are easily reversed in OpenRefine and you can capture all the actions applied to your data and share this documentation with your publication as supplemental material. OpenRefine saves as you go. You can return to the project at any time to pick up where you left off, or export your data to a new file.
- - OpenRefine can be used to standardise and clean data across your file.
+ - OpenRefine can be used to standardise and clean data across your files.
     
 It can help you:
 
@@ -61,7 +61,7 @@ answer a lot of beginner questions and problems.
 
 The OpenRefine GitHub wiki page has a [reference](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Functions) of the General Refine Expression Language (GREL) used by OpenRefine (more on GREL in ove of the following episodes).
 
-## Before we get started
+## Before you get started
  
 Make sure you followed the steps in the [Setup section](../setup.html) to install OpenRefine and download data we will 
 be using in this lesson.
