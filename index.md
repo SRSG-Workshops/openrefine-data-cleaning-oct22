@@ -25,7 +25,7 @@ edits by hand or in spreadsheet programmes such as Microsoft Excel, LibreOffice 
 > This lesson assumes no prior knowledge of the computational skills or tools apart from the basic 
 > understanding of tabular data stored in spreadsheets.
 >
-> To get started, follow the directions in the "[Setup](setup/)" section to download OpenRefine and 
+> To get started, follow the directions in the "[Setup](/setup.html)" section to download OpenRefine and 
 >lesson data to your computer.
 {: .prereq}
 
