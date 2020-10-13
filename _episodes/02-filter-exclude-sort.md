@@ -13,11 +13,11 @@ keypoints:
 - "OpenRefine provides a way to sort and filter data without affecting the raw data."
 ---
 
-# Lesson
+## Filtering data
 
-## Filtering
-
-There are many entries in our data table. We can filter it to work on a subset of the data in the list for the next set of operations. Please ensure you perform this step to save time during the class.
+There are many entries in our data table. Sometimes you want to view and work only with a subset of data or apply some 
+operation only on a subset. 
+You can do that in OpenRefine by applying filters to your data.
 
 1. Click the down arrow next to `scientificName` > `Text filter`. A `scientificName` facet will appear on the left margin.
 2. Type in `bai` and press return. There are 48 matching rows of the original 35549 rows (and these rows are selected for the subsequent steps).
@@ -38,14 +38,9 @@ There are many entries in our data table. We can filter it to work on a subset o
 > {: .solution}
 {: .challenge}
 
-### Excluding entries
-
+### Excluding data entries
 
 In addition to the solutions included above, another way to narrow our filter is to `include` and/or `exclude` entries in a facet. If you still have your facet for `scientificName`, you can use it, or use drop-down menu > `Facet` > `Text facet` to create a new facet. Only the entries with names that agree with your `Text filter` will be included in this facet.
-
-Faceting and filtering look very similar. A good distinction is that faceting gives you an overview description of all the data that 
-is currently selected, while filtering allows you to select a subset of your data for analysis. 
-
 
 > ## Exercise
 >
@@ -65,13 +60,18 @@ is currently selected, while filtering allows you to select a subset of your dat
 
 Important: Select both species for your filtered dataset before continuing with the rest of the exercises.
 
-## Sort
+>## Filters vs. facets
+> Faceting and filtering look very similar. A good distinction is that faceting gives you an overview description of all the data that 
+> is currently selected, while filtering allows you to select a subset of your data for analysis. 
+>
+{: .callout}
+
+## Sorting data
 
 You can sort the data in a column by using the drop-down menu available in that column.
 There you can sort by `text`, `numbers`, `dates` or `booleans` (`TRUE` or `FALSE` values). You can also specify what order to put `Blanks` and `Errors` in the sorted results.
 
 If this is your first time sorting this table, then the drop-down menu for the selected column shows `Sort...`. Select what you would like to sort by (such as `numbers`). Additional options will then appear for you to fine-tune your sorting.
-
 
 > ## Exercise
 >
@@ -94,8 +94,7 @@ If you try to re-sort a column that you have already used, the drop-down menu ch
 > {: .solution}
 {: .challenge}
 
-
-### Sorting by multiple columns.
+### Sorting by multiple columns
 
 You can sort by multiple columns by performing sort on additional columns. The sort will depend on the order in which you select columns to sort. To restart the sorting process with a particular column, check the `sort by this column alone` box in the `Sort` pop-up menu.
 

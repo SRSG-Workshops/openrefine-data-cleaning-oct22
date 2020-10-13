@@ -1,5 +1,5 @@
 ---
-title: "Working with OpenRefine"
+title: "Starting with OpenRefine and Exploring Data"
 teaching: 15
 exercises: 20
 questions:
@@ -42,6 +42,14 @@ Once OpenRefine is launched in your browser, the left margin has options to `Cre
 Note that at step 1, you could upload data in a standard form from a web address by 
 selecting `Get data from` `Web Addresses (URLs)`.
 
+> ## Original raw data remains unchanged 
+> When you import your data in OpenRefine, it creates a separate project and a copy of your data so you original raw 
+>data remains unchanged. Any changes to the data in the cleaning steps to follow are done to the copy within your project. 
+{: .testimonial}
+
+Let's now start exploring and getting a higher-level overview of our data - sumarising and looking for potential 
+outliers and errors.
+
 ## Data faceting
 
 Data faceting is exploring data by applying multiple filters.
@@ -70,12 +78,9 @@ along with a number representing how many times that value occurs in the column.
 5. Hover the mouse over one of the names in the `Facet` list. You should see that you have an `edit` function available. 
 6. You could use this to fix an error immediately, and OpenRefine will ask whether you want to make the same correction to every value it finds like that one. But OpenRefine offers even better ways to find and fix these errors, which we'll use instead. We'll learn about these when we talk about clustering.
 
-> ## Solution
-> 
-> There will be several near-identical entries in `scientificName`. For example, there is one entry for `Ammospermophilis harrisi` and
-> one entry for `Ammospermophilus harrisii`. These are both misspellings of `Ammospermophilus harrisi`. We will see how to correct these 
-> misspelled and mistyped entries in a later exercise.  
-{: .solution}
+There will be several near-identical entries in `scientificName`. For example, there is one entry for `Ammospermophilis harrisi` and
+one entry for `Ammospermophilus harrisii`. These are both misspellings of `Ammospermophilus harrisi`. We will see how to correct these 
+misspelled and mistyped entries in a later exercise.  
 
 ### Other types of facets
 As well as 'Text facets' OpenRefine also supports a range of other types of facet. These include:
