@@ -1,5 +1,5 @@
 ---
-title: "Starting with OpenRefine and Exploring Data"
+title: "Opening and Exploring Data"
 teaching: 15
 exercises: 20
 questions:

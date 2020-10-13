@@ -1,5 +1,5 @@
 ---
-title: "Filtering and Sorting with OpenRefine"
+title: "Filtering and Sorting Data"
 teaching: 10
 exercises: 10
 questions:

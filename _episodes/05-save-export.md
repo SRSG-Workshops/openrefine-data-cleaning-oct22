@@ -1,5 +1,5 @@
 ---
-title: "Exporting and Saving Data from OpenRefine"
+title: "Exporting and Saving Data"
 teaching: 10
 exercises: 5
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "Examining Numbers in OpenRefine"
+title: "Working with Numeric Data"
 teaching: 10
 exercises: 10
 questions:
@@ -10,12 +10,10 @@ objectives:
 - "Identify and modify non-numeric values in a column using facets."
 - "Use scatterplot facet to examine relationships among columns."
 keypoints:
-- "OpenRefine also provides ways to get overviews of numerical data."
+- "OpenRefine provides several ways to get overviews of numerical data."
 ---
 
-# Lesson
-
-## Numbers
+## Number data
 
 When a table is imported into OpenRefine, all columns are treated as having text values. We saw earlier how we can sort column values as numbers, but this does not change the cells in a column from text to numbers. Rather, this interprets the values as numbers for the purposes of sorting but keeps the underlying data type as is. We can, however, transform columns to other data types (e.g. number or date) using the `Edit cells` > `Common transforms` feature. Here we will experiment changing columns to numbers and see what additional capabilities that grants us.
 
@@ -40,17 +38,14 @@ To transform cells in the `recordID` column to numbers, click the down arrow for
 Sometimes there are non-number values or blanks in a column which may represent errors in data entry and we want to find them. 
 We can do that with a `Numeric facet`.
 
-> ## Exercise
->
-> 1. For a column you transformed to numbers, edit one or two cells, replacing the numbers with text (such as `abc`) or blank (no number or text).
-> 2. Use the pulldown menu to apply a numeric facet to the column you edited. The facet will appear in the left panel.
-> 3. Notice that there are several checkboxes in this facet: `Numeric`, `Non-numeric`, `Blank`, and `Error`. Below these are counts of the number of cells in each category. You should see checks for `Non-numeric` and `Blank` if you changed some values.
-> 4. Experiment with checking or unchecking these boxes to select subsets of your data.
-{: .challenge}
+1. For a column you transformed to numbers, edit one or two cells, replacing the numbers with text (such as `abc`) or blank (no number or text).
+2. Use the pulldown menu to apply a numeric facet to the column you edited. The facet will appear in the left panel.
+3. Notice that there are several checkboxes in this facet: `Numeric`, `Non-numeric`, `Blank`, and `Error`. Below these are counts of the number of cells in each category. You should see checks for `Non-numeric` and `Blank` if you changed some values.
+4. Experiment with checking or unchecking these boxes to select subsets of your data.
 
 When done examining the numeric data, remove this facet by clicking the `x` in the upper left corner of its panel. Note that this does not undo the edits you made to the cells in this column. If you want to reverse these edits, use the `Undo / Redo` function.
 
-## Scatterplot facet
+### Scatterplot facet
 
 Now that we have multiple columns representing numbers, we can see how they relate to one another using the scatterplot facet. Select a numeric column, for example `recordID`, and use the pulldown menu to > `Facet` > `Scatterplot facet`. A new window called `Scatterplot Matrix` will appear. There are squares for each pair of numeric columns organized in an upper right triangle. Each square has little dots for the cell values from each row.
 
@@ -59,8 +54,6 @@ Now that we have multiple columns representing numbers, we can see how they rela
 > 1. Examine the scatterplots overall. Do the patterns make sense?
 > 2. Why does the scatterplot for `recordID` vs `period` have the pattern it does?
 {: .challenge}
-
-## Examine pair of columns in detail
 
 We can examine one pair of columns by clicking on its square in the `Scatterplot Matrix` A new facet with only that pair will appear in the left margin. 
 
