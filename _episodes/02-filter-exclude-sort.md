@@ -21,7 +21,10 @@ You can do that in OpenRefine by applying filters to your data.
 
 1. Click the down arrow next to `scientificName` > `Text filter`. A `scientificName` facet will appear on the left margin.
 2. Type in `bai` and press return. There are 48 matching rows of the original 35549 rows (and these rows are selected for the subsequent steps).
-3. At the top, change the view to `Show` 50 `rows`. This way you will see all the matching rows.
+
+    ![OpenRefine Filtering](../fig/openrefine-filtering.png)
+
+3. At the top, change the view to `Show as` 50 `rows`. This way you will see all the matching rows.
 
 > ## Exercise
 >
@@ -29,36 +32,25 @@ You can do that in OpenRefine by applying filters to your data.
 > 2. How would you restrict this to one of the species selected?  
 > 
 > > ## Solution
-> > 1. Do `Facet` > `Text facet` on the `scientificName` column after filtering. This will show that
-> > two names match your filter criteria. They are `Baiomys taylori` and `Chaetodipus baileyi`.   
+> > 1. If you kept a text facet over `scientificName` from before - it will show that
+> > two names match your filter criteria are: `Baiomys taylori` and `Chaetodipus baileyi`. If you have closed 
+> that text facet, do `Facet` > `Text facet` on the `scientificName` column after filtering to see the same effect.    
 > > 2. To restrict to only one of these two species, you could make the search case sensitive or 
 > > you could split the `scientificName` column into species and genus before filtering or
-> > you could include more letters in your filter.
+> > you could include more letters in your filter, e.g. `baio` which would exclude `Chaetodipus baileyi`. Try playing with this.
 > > 
 > {: .solution}
 {: .challenge}
 
 ### Excluding data entries
 
-In addition to the solutions included above, another way to narrow our filter is to `include` and/or `exclude` entries in a facet. If you still have your facet for `scientificName`, you can use it, or use drop-down menu > `Facet` > `Text facet` to create a new facet. Only the entries with names that agree with your `Text filter` will be included in this facet.
+In addition to the solutions included above, another way to narrow our filter is to use the `include` or `exclude` buttons on entries in a facet. If you still have your facet for `scientificName`, you can use it, or use drop-down menu > `Facet` > `Text facet` to recreate it. 
 
-> ## Exercise
->
-> Use `include / exclude` to select only entries from one of these two species.
->
-> > ## Solution
-> > 
-> > 1. In the facet (left margin), click on one of the names, such as `Baiomys taylori`. Notice that when you click on the name, or hover
-> > over it, there are entries to the right for `edit` and `include`. 
-> > 2. Click `include`. This will explicitly include this species, and exclude others that are not expicitly included. Notice that the
-> option now changes to `exclude`.
-> > 3. Click `include` and `exclude` on the other species (`Chaetodipus baileyi`) and notice how the two entries appear and disappear
-> >  from the table.
-> > 
-> {: .solution}
-{: .challenge}
+1. In the facet (on the left margin), hover over one of the names, e.g. `Baiomys taylori`. Notice that when you hover over it, there are buttons to the right for `edit` and `include`. Also note that if you click rather than hover - you will automatically include this entry in the filter, in which case you will have buttons for `edit` and `exclude`.
+2. Click `include`. This will explicitly include this species, and exclude others that are not explicitly included. Notice that the option now changes to `exclude`.
+3. Click `include` and `exclude` on the other species (`Chaetodipus baileyi`) and notice how the two entries appear and disappear from the table.
 
-Important: Select both species for your filtered dataset before continuing with the rest of the exercises.
+**Important:** Make sure both species are included in your filtered dataset before continuing with the rest of the exercises.
 
 >## Filters vs. facets
 > Faceting and filtering look very similar. A good distinction is that faceting gives you an overview description of all the data that 
@@ -75,21 +67,42 @@ If this is your first time sorting this table, then the drop-down menu for the s
 
 > ## Exercise
 >
-> Sort by month. How can you ensure that months are in order?
+> Sort by month. What happens if you sort that column as text? How can you ensure that months are in order? 
+> > ## Solution  
+> > From the drop-down menu on the column `mo` select the `Sort` then `Sort...` option. Select 
+> > `Sort cell values as text` first. You can also rearrange Errors and Blanks to come at top when sorting (by 
+> > drag and dropping them in the box on the right) - this is a good practice detect some outliers.      
+> >
+>   ![OpenRefine Sorting](../fig/openrefine-sorting.png)
+> >
+> > You will notice that values for month have been sorted in alphabetical order, where months 10, 11 and 12 came before month 2. 
+> >
+>   ![OpenRefine Sorting](../fig/openrefine-sort-as-text.png)
+> >  
+> > This is probably not what you wanted - so you will have to redo the sort using `Sort cell values as number` option.
+> > 
+> > You may have noticed that in the case of sorting as numbers, the actual column itself remained as text. OpenRefine did not convert the column to numbers (notice the absence of green font). 
+> > 
+> > Another thing to note is that sorting is not an action that you can undo/redo - it does not appear on Undo/Redo tab.
+> {: .solution}
 {: .challenge}
 
-If you try to re-sort a column that you have already used, the drop-down menu changes slightly, to > `Sort` without the `...`, to remind you that you have already used this column. It will give you additional options:
+If you try to re-sort a column that you have already used, the drop-down menu changes slightly, to `Sort` without the `...`, to remind you that you have already used this column. It will give you additional options:
 
-* > `Sort` > `Sort...` - This option enables you to modify your original sort. 
-* > `Sort` > `Reverse` - This option allows you to reverse the order of the sort.
-* > `Sort` > `Remove sort` - This option allows you to undo your sort.
+* `Sort` > `Sort...` - This option enables you to modify your original sort. 
+* `Sort` > `Reverse` - This option allows you to reverse the order of the sort.
+* `Sort` > `Remove sort` - This option allows you to undo your sort.
 
+It may not always be that obvious in OpenRefine that you did a sort, or you may forget that you did it. Once you do the sort for the first time - a little `Sort` button will appear at the top as an indicator that your sorted you data in some way as shown in the image below. It will disappear if you remove the sort.
+
+![OpenRefine Sorting button](../fig/openrefine-sort-top-button.png) 
+ 
 > ## Exercise
 > 
-> Sort the data by `plot`. What year(s) were observations recorded for plot 1 in this filtered dataset?
+> Remove the sort by month. Then sort the data by `plot`. What year(s) were observations recorded for plot 1 in this filtered dataset?
 > 
 > > ## Solution
-> > In the `plot` column, select `Sort...` > `numbers` and select `smallest first`. The years represented are 1990 and 1995.
+> > In the `plot` column, select `Sort...` > `numbers` and select `smallest first`. The years observations were recorded in plot 1 are 1990 and 1995.
 > > 
 > {: .solution}
 {: .challenge}
@@ -109,7 +122,7 @@ You can sort by multiple columns by performing sort on additional columns. The s
 > > 1. For the `mo` column, click on `Sort...` and then `numbers`. This will group all entries made in, for example, January,
 > > together, regardless of the year that entry was collected.  
 > > 2. For the `yr` column, click on `Sort` > `Sort...` > `numbers` and select `sort by this column alone`. This will undo the 
-> > sorting by month step. Once you've sorted by `yr` you can then apply another sorting step to sort by month within year. To do this
+> > sorting by month step. Once you have sorted by `yr` you can then apply another sorting step to sort by month within year. To do this
 > > for the `mo` column, click on `Sort` > `numbers` but do not select `sort by this column alone`. To ensure that all entries are shown 
 > > chronologically, you will need to add a third sorting step by day within month. 
 > > 

@@ -11,7 +11,7 @@ objectives:
 - "Save JSON code from an analysis."
 - "Apply saved JSON code to an analysis."
 keypoints:
-- "All changes are being tracked in OpenRefine, and this information can be used for scripts for future analyses or reproducing an analysis."
+- "All changes are being tracked in OpenRefine (apart from individual cell changes and sorting!), and this information can be used for scripts for future analyses or reproducing an analysis."
 - "Scripts can (and should) be published together with the dataset as part of the digital appendix of the research output."
 ---
 

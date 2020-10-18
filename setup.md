@@ -25,8 +25,8 @@ The original database is published at [Ecological Archives](http://esapubs.org/a
 > **CITATION:** Ernest, Morgan; Brown, James; Valone, Thomas; White, Ethan P. (2017): Portal Project Teaching Database. Figshare. [https://doi.org/10.6084/m9.figshare.1314459.v6](https://doi.org/10.6084/m9.figshare.1314459.v6)
 {: .testimonial}
 
-In this lesson, we will use the following file from the [Portal Project Teaching Dataset](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459). You should download it as a preparation for the workshop.
--  [Portal_rodents_19772002_scinameUUIDs.csv](https://ndownloader.figshare.com/files/7823341) 
+In this lesson, we will use the following file from the [Portal Project Teaching Dataset](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459). You should download it as a preparation for the workshop. Data in some columns (namely `locality`, `county`, `country`, `JSON`, `decimalLatitude` and `decimalLongitude` are contrived for the purpose of the lessons and are in no way related to the original dataset). 
+-  [Portal_rodents_19772002_scinameUUIDs.csv](https://ndownloader.figshare.com/files/7823341). 
 
 ## Software
 
@@ -42,11 +42,11 @@ Internet). You access it via your browser, but no Internet connection is needed.
 default browser. OpenRefine runs in your default browser, but may not run correctly in Internet Explorer.
  - Learn how to set your browser as default by clicking on this link for [Google Chrome](https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en-GB) and this link for [Firefox](https://support.mozilla.org/en-US/kb/make-firefox-your-default-browser).
 - Download software from [OpenRefine](http://openrefine.org/download.html)
- - Select the most recent version of OpenRefine (do not select beta versions or the release candidates). The version that you should download will be at the top of the page and named OpenRefine 3.1 for example.
+ - Select the most recent version of OpenRefine. The version that you should download will be at the top of the page.
 - Unzip the downloaded file into a directory by right-clicking and selecting “Extract…”. Name that directory something like OpenRefine.
 - Go to your newly created OpenRefine directory.
 - Launch OpenRefine by clicking on openrefine.exe (this will launch a command prompt window first; ignore that, and wait for OpenRefine to launch in the web browser, which is where you will interact with the program).
-- If you are using a different browser, or OpenRefine does not automatically open for you, point your browser at http://127.0.0.1:3333/ or http://localhost:3333 to launch the program.
+- If you are using a different browser, or OpenRefine does not automatically open for you, type the following URL in your browser: http://127.0.0.1:3333/ or http://localhost:3333 to launch the program.
 
 ### Mac
 
