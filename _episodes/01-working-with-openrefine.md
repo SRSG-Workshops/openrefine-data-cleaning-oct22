@@ -114,7 +114,8 @@ Facets are intended to group together common values and OpenRefine limits the nu
 > > 1. For the column `yr` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 26 unique entries in
 > > this column.  
 > > 2. By default, the column `yr` is formatted as Text. You can change the format by doing `Edit cells` > `Common transforms` > 
-> > `To number`. Notice how the data in column changed the colour to green. Doing `Facet` > `Numeric facet` on column `yr` now creates a box in the left panel that shows a histogram of the number of 
+> > `To number`. Notice how the data in column changed the colour from black to green the values change from left-justified to right-justified. 
+> > Doing `Facet` > `Numeric facet` on column `yr` now creates a box in the left panel that shows a histogram of the number of 
 > > entries per year. Notice that the data is shown as a number, not a date. If you instead transform the column to a date, the 
 > > program will assume all entries are on January 1st of the year.   
 > > 3. Click `Sort by count` in the text facet box. The year with the most observations is 1997; the year with the least is 1977. 
