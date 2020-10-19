@@ -16,14 +16,16 @@ keypoints:
 
 ## Saving and Exporting a Project
 
-In OpenRefine you can save or export the project. This means you're saving the data and all the 
-information about the cleaning and data transformation steps you've done. Once you've saved a project, you can
+In OpenRefine you can save or export the project. This means you are saving the data and all the 
+information about the cleaning and data transformation steps you've done. Once you have saved a project, you can
 open it up again and be just where you stopped before.
 
 ### Saving
 
 By default OpenRefine is saving your project. If you close OpenRefine and open it up again,
-you'll see a list of your projects. You can click on any one of them to open it up again.
+you will see a list of your projects. You can click on any one of them to open it up again.
+
+![OpenRefine Open Project](../fig/openrefine-open-project.png)
 
 ### Exporting
 
@@ -42,15 +44,15 @@ folder icon will now appear.
     (`7zFM`, for example).
 3. Look at the files that appear in this folder. What files are here? What information do you think these files contain?
 
-> ## Solution
-> You should see:
-> - a  `history` folder which contains three `zip` files. Each of these files itself contains a `change.txt` file. 
-> These `change.txt` files are the records of each individual transformation that you did to your data. 
-> - a `data.zip` file. When expanded, this `zip` file includes a file called `data.txt` which is a copy of your raw data.
-> You may also see other files.
-{: .solution}
+![OpenRefine Compressed Project](../fig/openrefine-compressed-project.png)
 
-You can import an existing project into OpenRefine by clicking `Open...` in the upper right > `Import Project` and selecting the `tar.gz` 
+Once you open the compressed OpenRefine project fine, you should see:
+- a  `history` folder which contains three `zip` files. Each of these files itself contains a `change.txt` file. 
+These `change.txt` files are the records of each individual transformation that you did to your data. 
+- a `data.zip` file. When expanded, this `zip` file includes a file called `data.txt` which is a copy of your raw data.
+You may also see other files.
+
+You (or your colleague you shared your project with) can now import an existing project into OpenRefine by clicking `Open...` in the upper right > `Import Project` and selecting the `tar.gz` 
 project file. This project will include all of the raw data and cleaning steps that were part of the original project.
 
 ## Exporting Cleaned Data 
@@ -59,6 +61,6 @@ You can also export just your cleaned data, rather than the entire project.
 
 1. Click `Export` in the top right and select the file type you want to export the data in. `Tab-separated values` (`tsv`) or `Comma-separated values` (`csv`) would be good choices.
 2. That file will be exported to your default `Download` directory. That file can then be opened in a spreadsheet program or imported
-into programs like R or Python, which we'll be discussing later in our workshop.
+into programs like R or Python for further analysis.
 
-Remember from our lesson on Spreadsheets that using widely-supported, non-proprietary file formats like `tsv` or `csv` improves the ability of yourself and others to use your data. 
+Remember from [the lesson on spreadsheets](https://southampton-rsg.github.io/spreadsheets-data-organisation-and-management/) that using widely-supported, non-proprietary file formats like `tsv` or `csv` improves the ability of yourself and others to use your data. 
