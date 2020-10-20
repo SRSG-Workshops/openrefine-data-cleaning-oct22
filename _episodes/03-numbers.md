@@ -38,7 +38,8 @@ To transform cells in the `recordID` column to numbers, click the down arrow for
 Sometimes there are non-number values or blanks in a column which may represent errors in data entry and we want to find them. 
 We can do that with a `Numeric facet`.
 
-1. For a column you transformed to numbers, edit one or two cells, replacing the numbers with text (such as `abc`) or blank (no number or text).
+1. For a column you transformed to numbers, edit one or two cells, replacing the numbers with text (such as `abc`) or blank (no number or text). To do so, hover over the cell you want to modify and a little `edit` button 
+will appear. Click on it and you will be able to modify the cell's value inline.
 
     ![OpenRefine Clustering](../fig/openrefine-numeric-data.png)
 
@@ -47,6 +48,9 @@ We can do that with a `Numeric facet`.
     ![OpenRefine Clustering](../fig/openrefine-numeric-facet.png)
 
 3. Notice that there are several checkboxes in this facet: `Numeric`, `Non-numeric`, `Blank`, and `Error`. Below these are counts of the number of cells in each category. You should see checks for `Non-numeric` and `Blank` if you changed some values.
+
+    ![OpenRefine Clustering](../fig/openrefine-numeric-facet-options.png)
+
 4. Experiment with checking or unchecking these boxes to select subsets of your data.
 
 When done examining the numeric data, remove this facet by clicking the `x` in the upper left corner of its panel. Note that this does not undo the edits you made to the cells in this column. If you want to reverse these edits, use the `Undo / Redo` function.
