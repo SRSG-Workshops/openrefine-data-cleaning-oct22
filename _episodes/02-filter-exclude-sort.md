@@ -15,40 +15,51 @@ keypoints:
 
 ## Filtering data
 
-There are many entries in our data table. Sometimes you want to view and work only with a subset of data or apply some 
-operation only on a subset. 
-You can do that in OpenRefine by applying filters to your data.
+Sometimes you want to view and work only with a subset of data or apply an operation only to a subset. 
+You can do this by applying filters to your data.
 
 1. Click the down arrow next to `scientificName` > `Text filter`. A `scientificName` facet will appear on the left margin.
-2. Type in `bai` and press return. There are 48 matching rows of the original 35549 rows (and these rows are selected for the subsequent steps).
+2. Type in `bai` into the text box in the facet and press return. At the top of the page it will report that, out of the 35549
+   rows in the raw data, there are 48 rows in which the text has been found within the `scientificName` column (and these rows will be selected for the
+  subsequent steps).
 
     ![OpenRefine Filtering](../fig/openrefine-filtering.png)
 
-3. At the top, change the view to `Show as` 50 `rows`. This way you will see all the matching rows.
+3. Near the top of the screen, change `Show:` to 50. This way you will allow you to see all the matching rows.
 
 > ## Exercise
 >
-> 1. What scientific names (genus and species) are selected by this procedure?  
-> 2. How would you restrict this to one of the species selected?  
+> 1. What scientific names are selected by this text filter?  
+> 2. How would you restrict it to one of the species selected?  
 > 
 > > ## Solution
 > > 1. If you kept a text facet over `scientificName` from before - it will show that
 > > two names match your filter criteria are: `Baiomys taylori` and `Chaetodipus baileyi`. If you have closed 
-> that text facet, do `Facet` > `Text facet` on the `scientificName` column after filtering to see the same effect.    
-> > 2. To restrict to only one of these two species, you could make the search case sensitive or 
-> > you could split the `scientificName` column into species and genus before filtering or
-> > you could include more letters in your filter, e.g. `baio` which would exclude `Chaetodipus baileyi`. Try playing with this.
+> > the text facet, select `Facet` > `Text facet` on the `scientificName` column.    
+> > 2. There are various options to restrict to only one of the two species identified. You could make the search case sensitive. 
+> > You could split the `scientificName` column into species and genus columns, as before, and filter only the column of interest. 
+> > You could include more letters in your filter, e.g. `baio` which would exclude `Chaetodipus baileyi`. Try playing with these different options.
 > > 
 > {: .solution}
 {: .challenge}
 
 ### Excluding data entries
 
-In addition to the solutions included above, another way to narrow our filter is to use the `include` or `exclude` buttons on entries in a facet. If you still have your facet for `scientificName`, you can use it, or use drop-down menu > `Facet` > `Text facet` to recreate it. 
+Another way to narrow our filter is to use the `include` or `exclude` buttons on the entries in a facet. If you still
+have your facet for `scientificName`, you can use it. If you've closed that facet, recreate it by selecting `Facet` >
+`Text facet` on the `scientificName` column. 
 
-1. In the facet (on the left margin), hover over one of the names, e.g. `Baiomys taylori`. Notice that when you hover over it, there are buttons to the right for `edit` and `include`. Also note that if you click rather than hover - you will automatically include this entry in the filter, in which case you will have buttons for `edit` and `exclude`.
-2. Click `include`. This will explicitly include this species, and exclude others that are not explicitly included. Notice that the option now changes to `exclude`.
-3. Click `include` and `exclude` on the other species (`Chaetodipus baileyi`) and notice how the two entries appear and disappear from the table.
+1. In the text facet, hover over one of the names, e.g. `Baiomys taylori`. Notice that when you hover over it, there are
+   buttons to the right for `edit` and `include`.
+2. Whilst hovering over `Baiomys taylori`, move to the right and click the `include` option. This will include this
+   species, as signified by the name of the species changing from blue to orange, and new options of `edit` and
+   `exclude` will be presented. Note that in the top of the page, "46 matching rows" is now displayed instead of "48
+   matching rows".
+3. You can include `Chaetodipus baileyi` in the same way too.
+4. Alternatively, you can click the name of either one of the species. This will include the selected species and
+   exclude all others options in a single step, which can be useful.
+3. Click `include` and `exclude` on the other species (`Chaetodipus baileyi`) and notice how the two entries appear and
+   disappear from the data table to the right.
 
 **Important:** Make sure both species are included in your filtered dataset before continuing with the rest of the exercises.
 
