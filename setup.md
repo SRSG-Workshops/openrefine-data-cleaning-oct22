@@ -29,6 +29,10 @@ Data in some of the columns of the above file (namely `locality`, `county`, `cou
 > **CITATION:** Ernest, Morgan; Brown, James; Valone, Thomas; White, Ethan P. (2017): Portal Project Teaching Database. Figshare. [https://doi.org/10.6084/m9.figshare.1314459.v6](https://doi.org/10.6084/m9.figshare.1314459.v6)
 {: .testimonial}
 
+## Now what?
+
+Once you've downloaded the file above, you can [start the lesson](https://southampton-rsg.github.io/openrefine-data-cleaning/00-getting-started/index.html).
+
 <!--
 ## Software
 
