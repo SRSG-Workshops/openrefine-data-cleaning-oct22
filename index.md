@@ -25,7 +25,7 @@ the changes you make to automatically document the data cleaning process.
 > This lesson assumes no prior knowledge of the computational skills or tools apart from the basic 
 > understanding of tabular data stored in spreadsheets.
 >
-> To get started, follow the directions in the "[Setup](/setup.html)" section to download the
+> To get started, follow the directions in the "[Setup](https://southampton-rsg.github.io/openrefine-data-cleaning/setup.html)" section to download the
 > data we will use during the lesson.
 {: .prereq}
 
