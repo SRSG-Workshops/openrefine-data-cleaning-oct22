@@ -4,14 +4,17 @@ title: Setup
 ---
 
 ## Data  
-The data used in this lesson comes from a project observing a small mammal community in southern 
-Arizona, US. This is part of a project studying the effects of rodents and ants on the plant 
-community that has been running for almost 40 years. The rodents are sampled on a series of 24 plots, 
-with different experimental manipulations controlling which rodents are allowed to access which plots. 
-This is a real dataset that has been used in over 100 publications. It is published at [Ecological Archives](http://esapubs.org/archive/ecol/E090/118/) and can be found on [Portal Project Database](https://github.com/weecology/PortalData). This data is open and free to use for research purposes. 
+The data used in this lesson comes from a project observing a small mammal community in southern
+Arizona, US. This is part of a project studying the effects of rodents and ants on the plant
+community that has been running for almost 40 years. The rodents are sampled on a series of 24 plots,
+with different experimental manipulations controlling which rodents are allowed to access which plots.
 
-For the purposes of training, this data has been simplified a bit (you can still download the full dataset and work with it using exactly the same tools we will learn here). This simplified version of data is available from the [Portal Project Teaching Dataset](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459). In this lesson, we will use the following file:
--  [Portal_rodents_19772002_scinameUUIDs.csv](https://ndownloader.figshare.com/files/7823341)
+The Portal Project Teaching Dataset is a real dataset that has been used in over 100 publications. We have simplified it
+for the purposes of this lesson, but you can download the full dataset (see below for details) and work with it
+using exactly the same tools we will learn here.
+ 
+For this lesson, you will need to download the following file:
+*  [Portal_rodents_19772002_scinameUUIDs.csv](https://ndownloader.figshare.com/files/7823341)
 
 Data in some of the columns of the above file (namely `locality`, `county`, `country`, `JSON`, `decimalLatitude` and `decimalLongitude`) are contrived for the purpose of the lessons and are in no way related to the original dataset. 
 
@@ -26,6 +29,7 @@ Data in some of the columns of the above file (namely `locality`, `county`, `cou
 > **CITATION:** Ernest, Morgan; Brown, James; Valone, Thomas; White, Ethan P. (2017): Portal Project Teaching Database. Figshare. [https://doi.org/10.6084/m9.figshare.1314459.v6](https://doi.org/10.6084/m9.figshare.1314459.v6)
 {: .testimonial}
 
+<!--
 ## Software
 
 For this lesson you will need [OpenRefine](http://openrefine.org/) (formerly GoogleRefine) and a web browser.
@@ -62,4 +66,4 @@ OpenRefine come with embedded Java so you do not even have to worry whether you 
 - If a Web browser does not automatically open for you upon launch, type the following URL in your browser: 
 [http://127.0.0.1:3333/](http://127.0.0.1:3333/) or [http://localhost:3333](http://localhost:3333) to launch the program.
 
-
+-->
