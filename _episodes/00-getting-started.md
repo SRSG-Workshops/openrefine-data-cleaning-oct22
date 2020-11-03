@@ -52,9 +52,11 @@ OpenRefine is:
 * Has a large growing community, from novice to expert, ready to help.
 * Works with large-ish datasets (100,000 rows), but does not scale to many millions of rows.
 
+Click the arrow in the bottom right of the page to proceed to the next lesson.
+
 ## Further reading
 
-You can find out more at <http://openrefine.org> and check out some great [introductory videos](https://www.youtube.com/channel/UCqwSVsJ8CWD9pQUZDbJC1ew). There is a [Google Group](https://groups.google.com/forum/#!forum/openrefine) that can 
+You can find out more on the [OpenRefine website](http://openrefine.org) and check out some great [introductory videos](https://www.youtube.com/channel/UCqwSVsJ8CWD9pQUZDbJC1ew). There is a [Google Group](https://groups.google.com/forum/#!forum/openrefine) that can 
 answer a lot of beginner questions and problems. 
 [OpenRefine recipes, scripts, projects, and extensions](https://github.com/OpenRefine/OpenRefine/wiki/Recipes) are available too, where you can find useful transformations to run on your own data.
 
