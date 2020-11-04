@@ -13,9 +13,10 @@ keypoints:
 
 ## OpenRefine resources
 
-OpenRefine is more than a simple data cleaning tool. People are using it for all sorts of activities. Here are some other resources that might prove useful.
+OpenRefine is more than a simple data cleaning tool. People are using it for all sorts of activities. Here are some
+other resources that might prove useful.
 
-OpenRefine has its own web site with documentation and a book:
+OpenRefine has its own website with documentation and a book:
 
 * [OpenRefine web site](http://openrefine.org/)
 * [OpenRefine Documentation for Users (Wiki site)](https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Users)
@@ -29,4 +30,5 @@ In addition, see these other useful resources:
 * [Intersect Course Resources](https://github.com/IntersectAustralia/TrainingMaterials/tree/master/or) contains 
 Jared Berghold's 'Cleaning & Exploring your data with Open Refine'. 
 
-There are more advanced uses of OpenRefine, such as bringing in column or cell data using web locators (URLs or APIs). The links above can give you a start on your journey.
+There are more advanced uses of OpenRefine, such as bringing in column or cell data using web locators (URLs or APIs).
+The links above can give you a start on your journey.
