@@ -13,7 +13,7 @@ keypoints:
 - "OpenRefine provides several ways to provide overviews of numerical data."
 ---
 
-## Number data
+## Numeric data
 
 When a table is imported into OpenRefine, all the columns are treated as text values. We saw earlier how we can sort
 column values as numbers, but this does not change the cells in a column from text to numbers. Rather, it interprets the
