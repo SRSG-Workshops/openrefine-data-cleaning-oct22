@@ -37,6 +37,9 @@ project and import our portal rodents data.
 
     ![OpenRefine Import Data](../fig/openrefine-data-import.png)
 
+4. In the middle of the page, will be a set of options (`Character encoding`, etc.). Make sure the tick box next to
+   `Trim leading & trailing whitespace from strings` is not ticked. (We're going to need the leading whitespace in one
+   of our examples.) 
 5. If all looks well, click `Create Project>>` in the top right. You will be presented with a view onto your data. This
    is OpenRefine!
 
