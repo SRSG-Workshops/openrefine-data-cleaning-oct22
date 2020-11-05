@@ -26,7 +26,7 @@ a result was generated or repeat the analysis later. Reproducibility is becoming
 Manually documenting every data cleaning step is laborious and error prone. With OpenRefine, you can capture
 every step automatically, and then easily share the process with collaborators. In addition:
 - OpenRefine provides tools that make data cleaning more straightforward, which saves a lot of time.
-- It makes powerful but complex processes, such as clustering algorithms, easy to use
+- It makes powerful but complex processes, such as clustering algorithms, easy to use.
 - Any operation in OpenRefine can be easily reversed or undone.
 - It is straightforward to repeat a data cleaning process across multiple files - saving even more time.
  
@@ -47,10 +47,10 @@ allows you to save the raw data, processed data and all of the data cleaning ste
 export only your processed data to a new file. 
  
 OpenRefine is:
-* Free
+* Free.
 * Open source ([source on GitHub](https://github.com/OpenRefine/OpenRefine)).
 * Has a large growing community, from novice to expert, ready to help.
-* Works with large-ish datasets (100,000 rows), but does not scale to many millions of rows.
+* Works with large-ish datasets (100,000 rows), but does not yet scale to many millions of rows.
 
 Click the arrow in the bottom right of the page to proceed to the next lesson.
 
