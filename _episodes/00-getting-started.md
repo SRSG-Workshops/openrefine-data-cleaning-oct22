@@ -31,7 +31,7 @@ every step automatically, and then easily share the process with collaborators. 
 - It is straightforward to repeat a data cleaning process across multiple files - saving even more time.
  
  
-## What is OpenRefine and where to find help?
+## What is OpenRefine?
 [OpenRefine](http://openrefine.org) is a powerful tool for working with messy data: cleaning it; transforming it from
 one format into another.  It provides tools that allow to understand even large data sets, and allows you to get a feel
 of the "shape" and content of the data. This helps inform the direction of your later analysis of the data. 
@@ -54,10 +54,10 @@ OpenRefine is:
 
 Click the arrow in the bottom right of the page to proceed to the next lesson.
 
-## Further reading
+## Where to find help and further reading
 
 You can find out more on the [OpenRefine website](http://openrefine.org) and check out some great [introductory videos](https://www.youtube.com/channel/UCqwSVsJ8CWD9pQUZDbJC1ew). There is a [Google Group](https://groups.google.com/forum/#!forum/openrefine) that can 
 answer a lot of beginner questions and problems. 
 [OpenRefine recipes, scripts, projects, and extensions](https://github.com/OpenRefine/OpenRefine/wiki/Recipes) are available too, where you can find useful transformations to run on your own data.
 
-The OpenRefine GitHub wiki page has a [reference](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Functions) of the General Refine Expression Language (GREL) used by OpenRefine (more on GREL in ove of the following episodes).
+The OpenRefine GitHub wiki page has a [reference](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Functions) of the General Refine Expression Language (GREL) used by OpenRefine (more on GREL in one of the following episodes).
