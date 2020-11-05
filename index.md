@@ -29,8 +29,8 @@ the changes you make to automatically document the data cleaning process.
 > data we will use during the lesson.
 {: .prereq}
 
-> ## Outdated screenshots
+> ## Screenshots
 > Throughout this lesson we will make use and show content and screenshots from OpenRefine. As an actively 
 > developed software, OpenRefine is adding new features or changing visual elements. Screenshots in this lesson may 
->then become out-of-sync, refer or show content that no longer exists.
+> then become slightly out-of-sync and may not look identical as on your computer.
 {: .callout}
