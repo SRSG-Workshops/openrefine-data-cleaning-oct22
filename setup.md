@@ -29,7 +29,6 @@ Data in some of the columns of the above file (namely `locality`, `county`, `cou
 > **CITATION:** Ernest, Morgan; Brown, James; Valone, Thomas; White, Ethan P. (2017): Portal Project Teaching Database. Figshare. [https://doi.org/10.6084/m9.figshare.1314459.v6](https://doi.org/10.6084/m9.figshare.1314459.v6)
 {: .testimonial}
 
-<!--
 ## Software
 
 For this lesson you will need [OpenRefine](http://openrefine.org/) (formerly GoogleRefine) and a web browser. 
@@ -60,8 +59,6 @@ Once it is running on your machine, you access it via your browser at the addres
 - Check that you have Firefox or Chrome browser installed and set as your default browser. You can check how to set your browser as default for [Google Chrome](https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en-GB) or [Firefox](https://support.mozilla.org/en-US/kb/make-firefox-your-default-browser). 
 - Unzip the downloaded file into a directory. Go to this directory from terminal and type ./refine to start.
 - Wait for OpenRefine to launch in your default Web browser, which is where you will interact with the program. If this does not happen, head to [http://localhost:3333](http://localhost:3333) in your Web browser of choice.
-
--->
 
 ## Now what?
 
