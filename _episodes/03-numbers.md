@@ -6,20 +6,27 @@ questions:
 - "How can we convert a column from one data type to another?"
 - "How can we visualise relationships among columns?"
 objectives:
-- "Transform a text column into a number column."
+- "Transform a text column into a numeric column."
 - "Identify and modify non-numeric values in a column using facets."
-- "Use scatterplot facet to examine relationships among columns."
+- "Use the scatterplot facet to examine relationships among columns."
 keypoints:
-- "OpenRefine provides several ways to get overviews of numerical data - for example numeric and scatterplot facets."
+- "OpenRefine provides several ways to provide overviews of numerical data."
 ---
 
-## Number data
+## Numeric data
 
-When a table is imported into OpenRefine, all columns are treated as having text values. We saw earlier how we can sort column values as numbers, but this does not change the cells in a column from text to numbers. Rather, this interprets the values as numbers for the purposes of sorting but keeps the underlying data type as is. We can, however, transform columns to other data types (e.g. number or date) using the `Edit cells` > `Common transforms` feature. Here we will experiment changing columns to numbers and see what additional capabilities that grants us.
+When a table is imported into OpenRefine, all the columns are treated as text values. We saw earlier how we can sort
+column values as numbers, but this does not change the cells in a column from text to numbers. Rather, it interprets the
+values as numbers for the purposes of sorting, but keeps the underlying data type unchanged. We have seen that we can
+transform columns to other data types (e.g. number or date) using the `Edit cells` > `Common transforms` feature. Here
+we will experiment changing columns to numbers and see what additional capabilities this grants us.
 
-Be sure to remove any `Text filter` facets you have enabled from the left panel so that we can examine our whole dataset. You can remove an existing facet by clicking the `x` in the upper left of that facet window.
+Remove any `Text filter` facets you have created from the left panel so that we can examine our whole dataset. You can
+remove an existing facet by clicking the `x` in the top left of the facet window.
 
-To transform cells in the `recordID` column to numbers, click the down arrow for that column, then `Edit cells` > `Common transforms…` > `To number`. You will notice the `recordID` values change from left-justified to right-justified, and black to green color.
+Transform cells in the `recordID` column to numbers by clicking the down arrow for the column, then `Edit cells` >
+`Common transforms…` > `To number`. You will notice the `recordID` values change from left-justified to right-justified,
+ and from black to green.
 
 > ## Exercise
 >
@@ -27,55 +34,70 @@ To transform cells in the `recordID` column to numbers, click the down arrow for
 > 
 > > ## Solution
 > > 
-> > Only observations that include only numerals (0-9) can be transformed to numbers. If you apply a number transformation to 
-> > a column that does not meet this criteria, and then click the `Undo / Redo` tab, you will see a step that starts with 
-> > `Text transform on 0 cells`. This means that the data in that column was not transformed.
+> > To convert to number, a column must include only numerals (0-9). If you apply a number transformation to 
+> > a column that does not meet this criterion, no data will be transformed (you can check this under the `Undo / Redo`
+> > tab: you will see the stage will be described `Text transform on 0 cells`.)
 > > 
 > {: .solution}
 {: .challenge}
 
 ### Numeric facet
-Sometimes there are non-number values or blanks in a column which may represent errors in data entry and we want to find them. 
-We can do that with a `Numeric facet`.
+Sometimes there are non-numeric values or blanks in a column which could represent errors in data entry. We can use
+OpenRefine to find them with a `Numeric facet`.
 
-1. For a column you transformed to numbers, edit one or two cells, replacing the numbers with text (such as `abc`) or blank (no number or text). To do so, hover over the cell you want to modify and a little `edit` button 
-will appear. Click on it and you will be able to modify the cell's value inline.
+1. For a column you have transformed to numbers, edit one or two cells and replace the numbers with text (such as `abc`)
+   or with a blank (i.e. no space, number or text). To do so, hover over the cell you want to modify and an `edit` button 
+   will appear. Click on it and you will be able to modify the cell's value. If you receive an error `Not a valid
+   number`, try again and this time change the `Data Type` in the edit box to `Text`.
 
     ![OpenRefine Clustering](../fig/openrefine-numeric-data.png)
 
-2. Use the pulldown menu to apply a numeric facet to the column you edited. The facet will appear in the left panel.
+2. Now use the pulldown menu next to the column name and apply a numeric facet to the column you edited. The facet will
+   appear in the left panel.
 
     ![OpenRefine Clustering](../fig/openrefine-numeric-facet.png)
 
-3. Notice that there are several checkboxes in this facet: `Numeric`, `Non-numeric`, `Blank`, and `Error`. Below these are counts of the number of cells in each category. You should see checks for `Non-numeric` and `Blank` if you changed some values.
+3. Notice that there are several checkboxes in this facet: `Numeric`, `Non-numeric`, `Blank`, and `Error`. Below these
+   are counts showing the number of matching cells in each category. You should see checks for `Non-numeric` and `Blank`
+   if you changed some values.
 
     ![OpenRefine Clustering](../fig/openrefine-numeric-facet-options.png)
 
-4. Experiment with checking or unchecking these boxes to select subsets of your data.
+4. Experiment with checking or unchecking these boxes, and notice how this affects your data table.
 
-When done examining the numeric data, remove this facet by clicking the `x` in the upper left corner of its panel. Note that this does not undo the edits you made to the cells in this column. If you want to reverse these edits, use the `Undo / Redo` function.
+When you have finished examining the numeric data, remove this facet by clicking the `x` in the upper left corner of its
+panel. Note that this does not undo the edits you made to the cells in this column. If you want to reverse these edits,
+use the `Undo / Redo` function.
 
 ### Scatterplot facet
 
-Now that we have multiple columns representing numbers, we can see how they relate to one another using the scatterplot facet. Select a numeric column, for example `recordID`, and use the pulldown menu to > `Facet` > `Scatterplot facet`. A new window called `Scatterplot Matrix` will appear. There are squares for each pair of numeric columns (this may differ from your machine depending which columns you have transformed to numbers). Each square has little dots for the cell values from each row.
+Now that we have multiple columns representing numbers, we can see how they relate to one another using the scatterplot
+facet.
+
+Select a numeric column, for example `recordID`, and use the pulldown menu to > `Facet` > `Scatterplot facet`. A new
+window called `Scatterplot Matrix` will appear. It contains grids for each pair of numeric columns that have been 
+plotted against each other (the number will vary
+dependent on how many columns you have transformed to numbers).
 
 ![OpenRefine Scatterplot Facet](../fig/openrefine-scatterplot-facet.png)
 
 1. Examine the scatterplots overall. Do the patterns make sense?
 2. Why does the scatterplot for `recordID` vs `period` have the pattern it does?
 
-We can examine one pair of columns by clicking on its square in the `Scatterplot Matrix` A new facet with only that pair will appear in the left margin as a little interactive graph. Click in the scatterplot facet in the left margin and drag to highlight a rectangle. This will subset the data and filter to those selected entries.
+We can examine one pair of columns by clicking on its square in the `Scatterplot Matrix` A new facet with only that pair
+of columns will appear in the left margin as an interactive graph. Click in the scatterplot facet in the left margin and
+drag to highlight a rectangle. This is a very powerful way of subsetting data of interest.
 
 ![OpenRefine Scatterplot Facet](../fig/openrefine-scatterplot-highlighted.png)
 
 The scatterplot `recordID` vs `period` has a slightly unexpected shape - you would probably expect a 
-linear graph. Instead, you have some negative values on the
-`period` (y) axis and the scatterplot helped us uncover some outliers in data. When we selected a subset of data on the scatterplot diagram - you can see that there is some data with a negative number for `period`, which potentially is an error in your data. You can click anywhere on the graph to get rid of the subsetting. 
+linear graph. Instead, there are some negative values on the `period` axis. These are potentially errors in the data.
+You can click anywhere on the graph to get rid of the subsetting. 
 
 > ## Exercise
 > 
-> - Click on the `Scatterplot Matrix` square for `recordID` and `period` to get that as a facet in the left margin.
-> - Redo the `Text filter` on `scientificName` to show only entries including the letters `bai`.
+> - Click on the `Scatterplot Matrix` square for `recordID` and `period` to have it presented as a facet in the left margin.
+> - Create a `Text filter` on `scientificName` to show only entries including the letters `bai`.
 > Notice the change in the scatterplot. It might be easier to see if you click `export plot` to 
 > put it on a new browser tab.   
 >
