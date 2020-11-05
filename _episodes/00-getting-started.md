@@ -37,7 +37,7 @@ one format into another.  It provides tools that allow to understand even large 
 of the "shape" and content of the data. This helps inform the direction of your later analysis of the data. 
  
 It runs in a browser, which might lead you to think that it's a Web or Cloud program. It is not! It is a desktop 
-application that uses a browser as convenient interface. No internet connection is needed, and none of your data will be
+Java application that uses a browser as a convenient interface. No internet connection is needed, and none of your data will be
 sent to a remote server.
  
 OpenRefine does not modify your original dataset. It stores your raw data set, and presents views on that data set after
@@ -60,4 +60,6 @@ You can find out more on the [OpenRefine website](http://openrefine.org) and che
 answer a lot of beginner questions and problems. 
 [OpenRefine recipes, scripts, projects, and extensions](https://github.com/OpenRefine/OpenRefine/wiki/Recipes) are available too, where you can find useful transformations to run on your own data.
 
-The OpenRefine GitHub wiki page has a [reference](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Functions) of the General Refine Expression Language (GREL) used by OpenRefine (more on GREL in one of the following episodes).
+The OpenRefine GitHub wiki page has a [reference](https://github.com/OpenRefine/OpenRefine/wiki/GREL-Functions) of the General Refine Expression Language (GREL) used by OpenRefine. We won't be covering GREL in this lesson but it is a powerful scripting language 
+that is worth learning once you get the hang of OpenRefine as it will enable you to do even more complex data cleaning 
+and transformation steps.
