@@ -8,24 +8,29 @@ root: .
 > sciences](https://datacarpentry.org/lessons/#social-science-curriculum) curricula.
 {: .testimonial} 
 
-An important part of the data analysis pipeline is preparing data for analysis. Some of this
-involves data cleaning, where errors in the data are identified and corrected 
-or data structure and formatting made consistent. This step must be taken with the same care and attention
-to reproducibility as the data analysis itself.
+Most, if not all, real world data is messy. It includes errors, corruptions, inaccuracies and inconsistencies. Before
+data analysis can take place, *data cleaning* is needed to identify and correct errors, 
+and make the data structure and formatting consistent. This process has the potential to radically change the data,
+so it must be completed with the same care and attention to reproducibility as the data analysis itself.
 
-[OpenRefine](https://openrefine.org/) (formerly Google Refine) is a powerful free and open source tool 
-for working with messy data: cleaning it and transforming it from one format into another.
+As we saw in the last lesson, consistent and transparent manipulation of data is not a task that is well suited to
+spreadsheets. Fortunately, we have [OpenRefine](https://openrefine.org/) (previously known as Google Refine): a powerful
+and free, open-source tool that was purpose-built to help clean messy data. Many people comment
+that using OpenRefine for data cleaning saves them literally months of work.
 
-This lesson will teach you to use OpenRefine to clean and format
-data effectively and automatically track any changes that you make. Many people comment
-that this tool saves them literally months of work trying to make these
-edits by hand or in spreadsheet programmes such as Microsoft Excel, LibreOffice or OpenOffice.
+This lesson will teach you how to use OpenRefine to clean and format data, and will show you how it tracks
+the changes you make to automatically document the data cleaning process. 
 
 > ## Getting Started
 > This lesson assumes no prior knowledge of the computational skills or tools apart from the basic 
 > understanding of tabular data stored in spreadsheets.
 >
-> To get started, follow the directions in the "[Setup](/setup.html)" section to download OpenRefine and 
->lesson data to your computer.
+> To get started, follow the directions in the "[Setup](/setup.html)" section to download the
+> data we will use during the lesson.
 {: .prereq}
 
+> ## Outdated screenshots
+> Throughout this lesson we will make use and show content and screenshots from OpenRefine. As an actively 
+> developed software, OpenRefine is adding new features or changing visual elements. Screenshots in this lesson may 
+>then become out-of-sync, refer or show content that no longer exists.
+{: .callout}
