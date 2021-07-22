@@ -12,8 +12,6 @@ keypoints:
 - "Projects can be shared with collaborators, enabling them to see, reproduce and check all data cleaning steps you performed."
 ---
 
-# Lesson
-
 ## Saving and Exporting a Project
 
 OpenRefine saves your project as you work, so you don't need to worry about saving. You can export your cleaned
