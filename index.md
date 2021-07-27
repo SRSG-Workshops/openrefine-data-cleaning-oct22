@@ -13,7 +13,7 @@ data analysis can take place, *data cleaning* is needed to identify and correct 
 and make the data structure and formatting consistent. This process has the potential to radically change the data,
 so it must be completed with the same care and attention to reproducibility as the data analysis itself.
 
-As we saw in the last lesson, consistent and transparent manipulation of data is not a task that is well suited to
+Consistent and transparent manipulation of data is not a task that is well suited to
 spreadsheets. Fortunately, we have [OpenRefine](https://openrefine.org/) (previously known as Google Refine): a powerful
 and free, open-source tool that was purpose-built to help clean messy data. Many people comment
 that using OpenRefine for data cleaning saves them literally months of work.
