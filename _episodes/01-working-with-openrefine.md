@@ -184,9 +184,9 @@ comma, or a space).
 2. Click the down arrow next to the `scientificName` column. Choose `Edit Column` > `Split into several columns...`
 3. In the pop-up, in the `Separator` box, replace the comma with a space (the box will look empty when you're done).
 4. Important! Uncheck the box that says `Remove this column`.
-5. Click `OK`. You will get some new columns called `scientificName 1` and `scientificName 2`.
-6. Notice that in some cases `scientificName 1` and `scientificName 2` are empty (you can check by text faceting the
-   column). Why? What do you think we can do to fix it?
+5. Click `OK`. You will get some new columns called `scientificName 1`, `scientificName 2`, `scientificName 3`, etc.
+6. Notice that in some cases these newly created columns are empty (you can check by text faceting the
+   column). Why? What do you think we can do to fix it? (They are empty because the `scientificName` column contained blank spaces.)
 
 <!--
 The entries that have data in `scientificName 3` and `scientificName 4` but not the first two `scientificName` columns 
