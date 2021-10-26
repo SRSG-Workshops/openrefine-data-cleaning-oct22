@@ -51,7 +51,7 @@ to use your data in the future.
    you may be aware of).
 3. You can share the `.tar.gz` file with collaborators, or copy it to a different computer and import the project back
    into OpenRefine (say, to do further work at home). Note: sharing of this type is best performed via version control
-   software, which will be introduced in a later lesson.
+   software, such as [Git](https://southampton-rsg.github.io/swc-git-novice/index.html).
 
 
 If you wish to investigate the files, you can double-click on the `tar.gz` file and it will expand into a directory
