@@ -31,6 +31,6 @@ the changes you make to automatically document the data cleaning process.
 
 > ## Screenshots
 > Throughout this lesson we will make use and show content and screenshots from OpenRefine. As an actively 
-> developed software, OpenRefine is adding new features or changing visual elements. Screenshots in this lesson may 
-> then become slightly out-of-sync and may not look identical as on your computer.
+> developed software, OpenRefine is adding new features or changing visual elements. Screenshots in this lesson have been made with 
+> OpenRefine 3.3 and may have became out-of-date or not look identical as on your computer.
 {: .callout}
