@@ -242,5 +242,5 @@ Therefore, when you split with space as the separator, you will get only two col
 > {: .solution}
 {: .challenge}
 
-**Important:** `Undo` the splitting step before moving on to the next lesson. If you skip this step, your solutions 
+**Important:** `Undo` the splitting and renaming steps and retain the white space trimming step before moving on to the next lesson (it may be several steps back). If you skip this step, your solutions 
 for later exercises will not be the same as shown in those exercise solutions.
