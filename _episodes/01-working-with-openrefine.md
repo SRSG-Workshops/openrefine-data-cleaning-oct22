@@ -235,7 +235,7 @@ Therefore, when you split with space as the separator, you will get only two col
 > > ## Solution
 > > 
 > > On the `scientificName 1` column, click the down arrow and then `Edit column` > `Rename this column`. Type "genus" into the box
-> > that appears. Repeat the process `scientificName 2` column, and type "species" into the box
+> > that appears. Repeat the process for the `scientificName 2` column, and type "species" into the box
 > > that appears. A pop-up will appear that says `Another column already named species`. This is because there is another column
 > > where we've recorded the species abbreviation. You can choose another name like `speciesName` for this column or change the other 
 > > `species` column name to `species_abbreviation`.
