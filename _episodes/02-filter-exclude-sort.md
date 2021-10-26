@@ -154,7 +154,7 @@ alone` box in the `Sort` pop-up menu.
 > {: .solution}  
 {: .challenge}
 
-If you go back to one of the already sorted columns and select > `Sort` > `Remove sort`, that column is removed from
+If you go back to one of the already sorted columns and select `Sort` > `Remove sort`, that column is removed from
 your multiple sort. If it is the only column sorted, then the data revert to their original order.
 
 > ## Exercise
