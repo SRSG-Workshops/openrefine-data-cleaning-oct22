@@ -184,29 +184,17 @@ comma, or a space).
 2. Click the down arrow next to the `scientificName` column. Choose `Edit Column` > `Split into several columns...`
 3. In the pop-up, in the `Separator` box, replace the comma with a space (the box will look empty when you're done).
 4. Important! Uncheck the box that says `Remove this column`.
-5. Click `OK`. You will get some new columns called `scientificName 1`, `scientificName 2`, `scientificName 3`, etc.
+5. Click `OK`. You should get some new columns called `scientificName 1`, `scientificName 2`, `scientificName 3`, and `scientificName 4`.
 6. Notice that in some cases these newly created columns are empty (you can check by text faceting the
-   column). Why? What do you think we can do to fix it? (They are empty because the `scientificName` column contained blank spaces.)
+   column). Why? What do you think we can do to fix it?
 
-<!--
 The entries that have data in `scientificName 3` and `scientificName 4` but not the first two `scientificName` columns 
-had an extra space at the beginning of the entry. Leading white spaces are very difficult to notice when cleaning data
-manually. This is another advantage of using OpenRefine to clean your data. We will look at how to 
-fix leading and trailing white spaces in a later exercise.
--->
-
-> ## Exercise
->
-> Try to change the name of the `scientificName 2` column to `species`. How can you correct the problem you encounter?
-> 
-> > ## Solution
-> > 
-> > On the `scientificName 2` column, click the down arrow and then `Edit column` > `Rename this column`. Type "species" into the box
-> > that appears. A pop-up will appear that says `Another column already named species`. This is because there is another column
-> > where we've recorded the species abbreviation. You can choose another name like `speciesName` for this column or change the other 
-> > `species` column name to `speciesAbbreviation`.
-> {: .solution}
-{: .challenge}
+had an extra space at the beginning of the entry. Leading and trailing white spaces are very difficult to notice when cleaning data
+manually. This is another advantage of using OpenRefine to clean your data - this process can be automated. 
+In newer versions of OpenRefine (from version 3.4.1) there is now an option to 
+clean leading and trailing white spaces from all data when importing the data initially and creating the project. 
+We will look at how to 
+fix leading and trailing white spaces in a moment.
 
 ## Undo / Redo
 
@@ -239,6 +227,20 @@ spaces. However, blank spaces can make a big difference to computers, so we usua
 
 Removing the leading white spaces means that each entry in this column has exactly one space (between the genus and species parts). 
 Therefore, when you split with space as the separator, you will get only two columns.
+
+> ## Exercise
+>
+> Change the name of the `scientificName 1` column to `genus`. Try to change the name of the `scientificName 2` column to `species`. What problem do you encounter? How can you fix the problem?
+> 
+> > ## Solution
+> > 
+> > On the `scientificName 1` column, click the down arrow and then `Edit column` > `Rename this column`. Type "genus" into the box
+> > that appears. Repeat the process `scientificName 2` column, and type "species" into the box
+> > that appears. A pop-up will appear that says `Another column already named species`. This is because there is another column
+> > where we've recorded the species abbreviation. You can choose another name like `speciesName` for this column or change the other 
+> > `species` column name to `species_abbreviation`.
+> {: .solution}
+{: .challenge}
 
 **Important:** `Undo` the splitting step before moving on to the next lesson. If you skip this step, your solutions 
 for later exercises will not be the same as shown in those exercise solutions.
