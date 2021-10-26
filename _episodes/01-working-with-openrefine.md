@@ -218,7 +218,7 @@ you wish to conduct. OpenRefine provides `Undo` and `Redo` operations to make it
 
 ## Trim Leading and Trailing Whitespace
 
-Words with spaces at the beginning or end are particularly hard for we humans to identify from strings without these
+Words with spaces at the beginning or end are particularly hard for humans to identify from strings without these
 spaces. However, blank spaces can make a big difference to computers, so we usually want to remove them.
 
 1. In the header for the column `scientificName`, choose `Edit cells` > `Common transforms` > `Trim leading and trailing whitespace`.
