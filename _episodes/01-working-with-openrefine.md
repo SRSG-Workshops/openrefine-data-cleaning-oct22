@@ -193,8 +193,8 @@ had an extra space at the beginning of the entry. Leading and trailing white spa
 manually. This is another advantage of using OpenRefine to clean your data - this process can be automated. 
 In newer versions of OpenRefine (from version 3.4.1) there is now an option to 
 clean leading and trailing white spaces from all data when importing the data initially and creating the project. 
-We will look at how to 
-fix leading and trailing white spaces in a moment.
+Because we didn't clean white space at the time of importing the data, we will look at how to 
+fix leading and trailing white spaces manually in a moment.
 
 ## Undo / Redo
 
