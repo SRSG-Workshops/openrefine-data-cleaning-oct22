@@ -20,7 +20,7 @@ project", which will package together the data and all the information about the
 you've performed. You can use the exported project to transfer your work to another computer, share the project with collaborators,
 archive it with your research, etc.
 
-When you open OpenRefine, you will see a list of your saved projects. You can click on any one of them to open them.
+When you open OpenRefine (or navigate to `http://localhost:3333/` from an already open project), you will see a list of your saved projects. You can click on any one of them to open them.
 
 ![OpenRefine Open Project](../fig/openrefine-open-project.png)
 
