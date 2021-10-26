@@ -35,7 +35,7 @@ to save the data into a `.csv` file so that you can conduct analysis with Python
 2. The cleaned data will be exported to your default `Download` directory.
 
 Remember from [the lesson on spreadsheets](https://southampton-rsg.github.io/spreadsheets-data-organisation-and-management/)
-that using widely-supported, non-proprietary file formats like `.csv` or `.tsc` make it easier for yourself and others
+that using widely-supported, non-proprietary file formats like `.csv` or `.tsv` make it easier for yourself and others
 to use your data in the future. 
 
 
