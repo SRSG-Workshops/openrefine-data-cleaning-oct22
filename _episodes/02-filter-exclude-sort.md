@@ -166,3 +166,8 @@ your multiple sort. If it is the only column sorted, then the data revert to the
 > Use > `Sort` > `Remove sort` to remove the sort on the second of three columns. Notice how that changes the order.
 {: .challenge}
 
+>## Sorting does not change data
+> You may have noticed that after any of the sorting steps there is nothing to undo/redo. This is because you have only 
+> reordered and not modified you data. If you want to revert to the original order of the data - make sure you remove all
+> "sorts" using the `Sort` > `Remove sort` option. 
+{: .callout}
