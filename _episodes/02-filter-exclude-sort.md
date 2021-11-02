@@ -150,7 +150,7 @@ alone` box in the `Sort` pop-up menu.
 > > 2. To sort chronologically, click on `Sort` > `Sort...` from the `yr` column , and then select `numbers`. Before
 > > clicking 'OK' make sure you select `sort by this column alone` to start a new sort from scratch. You can now apply
 > > an additional sort, this time by month (click on `Sort` from the `mo` column, and then select `numbers`). To ensure
-> > that all entries are shown chronologically, you will need to add a third sorting step by day. 
+> > that all entries are shown chronologically, you will need to add a third sorting step by day (using column `dy`). 
 > > 
 > {: .solution}  
 {: .challenge}
