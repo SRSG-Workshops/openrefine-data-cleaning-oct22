@@ -119,7 +119,8 @@ you remove the sort.
  
 > ## Exercise
 > 
-> Remove the sort by month. Make sure you still have the text filter for the text "bai" on the `scientificName` column present (if you have lost your text filter > for "bai" see the start of the lesson to help you reinstate it). Then sort the data by `plot`. In which year(s) were observations recorded for plot 1 in the
+> Remove the sort by month. Make sure you still have the text filter for the text "bai" on the `scientificName` column present 
+> (if you have lost your text filter for "bai" see the start of the lesson to help you reinstate it). Then sort the data by `plot`. In which year(s) were observations recorded for plot 1 in the
 > filtered dataset? 
 > 
 > > ## Solution
