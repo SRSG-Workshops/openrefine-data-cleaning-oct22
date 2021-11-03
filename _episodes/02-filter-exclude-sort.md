@@ -65,7 +65,8 @@ have your facet for `scientificName`, you can use it. If you've closed that face
 
 >## Filters vs. facets
 > Faceting and filtering look very similar. A good distinction is that faceting gives you an overview description of all the data that 
-> is currently selected, while filtering allows you to select a subset of your data for analysis. 
+> is currently selected, while filtering allows you to select a subset of your data for analysis - e.g. you can also specify where to 
+> place Blanks and Errors in the sorted results.
 >
 {: .callout}
 
