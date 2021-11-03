@@ -74,7 +74,8 @@ have your facet for `scientificName`, you can use it. If you've closed that face
 
 To sort the data in a column, click the arrow next to your chosen column name and select `Sort...`. This will open a pop-up
 that will present you with different options, e.g. whether you wish to sort by `text`, `numbers`, `dates` or `booleans` 
-(i.e. `TRUE` or `FALSE` values). Additional options will appear to allow you to fine-tune your sorting.
+(i.e. `TRUE` or `FALSE` values). Additional options will appear to allow you to fine-tune your sorting - e.g. you can 
+specify where to place Blanks and Errors in the sorted results.
 
 ![OpenRefine Sorting](../fig/openrefine-sorting.png)
 
