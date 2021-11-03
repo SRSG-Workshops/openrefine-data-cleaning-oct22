@@ -1,71 +1,93 @@
 ---
 title: "Filtering and Sorting Data"
-teaching: 10
+teaching: 20
 exercises: 10
 questions:
 - "How can we select only a subset of our data to work with?"
 - "How can we sort our data?"
 objectives:
-- "Employ *text filter* or *include/exclude* to filter to a subset of rows."
-- "Sort tables by a column."
-- "Sort tables by multiple columns."
+- "Employ text filters or sub-setting options in facets to filter to a subset of rows."
+- "Sort data by one or multiple columns."
 keypoints:
-- "OpenRefine provides a way to sort and filter data without affecting the raw data."
+- "OpenRefine provides various ways to sort and filter data without affecting the raw data."
 ---
 
 ## Filtering data
 
 Sometimes you want to view and work only with a subset of data or apply an operation only to a subset. 
-You can do this by applying filters to your data.
+You can do this by applying various filters to your data.
 
-1. Click the down arrow next to `scientificName` > `Text filter`. A `scientificName` facet will appear on the left margin.
-2. Type in `bai` into the text box in the facet and press return. At the top of the page it will report that, out of the 35549
-   rows in the raw data, there are 48 rows in which the text has been found within the `scientificName` column (and these rows will be selected for the
-  subsequent steps).
+### Including/excluding data entries on facets
 
-    ![OpenRefine Filtering](../fig/openrefine-filtering.png)
-
-3. Near the top of the screen, change `Show:` to 50. This way you will allow you to see all the matching rows.
-
-> ## Exercise
->
-> 1. What scientific names are selected by this text filter?  
-> 2. How would you restrict it to one of the species selected?  
-> 
-> > ## Solution
-> > 1. If you kept a text facet over `scientificName` from before - it will show that
-> > two names match your filter criteria are: `Baiomys taylori` and `Chaetodipus baileyi`. If you have closed 
-> > the text facet, select `Facet` > `Text facet` on the `scientificName` column.    
-> > 2. There are various options to restrict to only one of the two species identified. You could make the search case sensitive. 
-> > You could split the `scientificName` column into species and genus columns, as before, and filter only the column of interest. 
-> > You could include more letters in your filter, e.g. `baio` which would exclude `Chaetodipus baileyi`. Try playing with these different options.
-> > 
-> {: .solution}
-{: .challenge}
-
-### Excluding data entries
-
-Another way to narrow our filter is to use the `include` or `exclude` buttons on the entries in a facet. If you still
-have your facet for `scientificName`, you can use it. If you've closed that facet, recreate it by selecting `Facet` >
+One way to filter down our data is to use the `include` or `exclude` buttons on the entries in a text facet. 
+If you still
+have your text facet for `scientificName`, you can use it. If you've closed that facet, recreate it by selecting `Facet` >
 `Text facet` on the `scientificName` column. 
 
 1. In the text facet, hover over one of the names, e.g. `Baiomys taylori`. Notice that when you hover over it, there are
    buttons to the right for `edit` and `include`.
 2. Whilst hovering over `Baiomys taylori`, move to the right and click the `include` option. This will include this
    species, as signified by the name of the species changing from blue to orange, and new options of `edit` and
-   `exclude` will be presented. Note that in the top of the page, "46 matching rows" is now displayed instead of "48
-   matching rows".
-3. You can include `Chaetodipus baileyi` in the same way too.
-4. Alternatively, you can click the name of either one of the species. This will include the selected species and
-   exclude all others options in a single step, which can be useful.
-3. Click `include` and `exclude` on the other species (`Chaetodipus baileyi`) and notice how the two entries appear and
+   `exclude` will be presented. Note that in the top of the page, "46 matching rows" is now displayed instead of "35549
+   rows".
+3. You can include other species in your current filter - e.g. click on`Chaetodipus baileyi` in the same way to include it in the filter.
+4. Alternatively, you can click the name of the species to include it in the filter instead of clicking the 
+`include`/`exclude` buttons. This will include the selected species and exclude all others options in a single step, which can be useful.
+5. Click `include` and `exclude` on the other species and notice how the entries appear and
    disappear from the data table to the right.
+
+You can also filter data using other types of facets - let's do it as an exercise.
+
+> ## Exercise
+> Remove all current facets and recreate the scatterplot facet for `recordID` and `period` columns as before. 
+> Drag a rectangular selection anywhere on the `Scatterplot Matrix` square for `recordID` and `period`. 
+> Notice how the filtered data change to show only entries included in the rectangle.
+>
+> > ## Solution
+> > In the screenshot below, we have filtered out only 12 entries by dragging a small rectangular selection on the 
+> > scatterplot graph. As before, when we first introduced the scatterplot facet, we can notice that something is
+> > potentially wrong with our data as values for `period` in the filtered subset 
+> > are negative (we are expecting only positive values) and potentially require futher examination and cleaning.
+> >
+>   ![OpenRefine Scatterplot Filter](../fig/scatterplot-filter.png)
+> >
+> {: .solution}
+{: .challenge}
+
+### Text filters
+Another way to filter data is to create a text filter on a column. Close all facets you may have created previously 
+and reinstate the text facet on the `scientificName` column.
+
+1. Click the down arrow next to `scientificName` > `Text filter`. A `scientificName` filter will appear on the left margin below the text facet.
+2. Type in `bai` into the text box in the filter and press return. At the top of the page it will report that, out of the 35549
+   rows in the raw data, there are 48 rows in which the text has been found within the `scientificName` column (and these rows will be selected for the
+   subsequent steps).
+
+   ![OpenRefine Filtering](../fig/openrefine-filtering.png)
+
+3. Near the top of the screen, change `Show:` to 50. This way you will allow you to see all the matching rows.
+
+> ## Exercise
+>
+> 1. What scientific names are selected by this text filter?
+> 2. How would you restrict it to one of the species selected?
+>
+> > ## Solution
+> > 1. If you kept a text facet over `scientificName` from before - it will show that
+       > > two names match your filter criteria are: `Baiomys taylori` and `Chaetodipus baileyi`. If you have closed
+       > > the text facet, select `Facet` > `Text facet` on the `scientificName` column.
+> > 2. There are various options to restrict to only one of the two species identified. You could make the search case sensitive.
+       > > You could split the `scientificName` column into species and genus columns, as before, and filter only the column of interest.
+       > > You could include more letters in your filter, e.g. `baio` which would exclude `Chaetodipus baileyi`. Try playing with these different options.
+> >
+> {: .solution}
+{: .challenge}
 
 **Important:** Make sure both species are included in your filtered dataset before continuing with the rest of the exercises.
 
 >## Filters vs. facets
-> Faceting and filtering look very similar. A good distinction is that faceting gives you an overview description of all the data that 
-> is currently selected, while filtering allows you to select a subset of your data for analysis - e.g. you can also specify where to 
+> Faceting and filtering look very similar. A good distinction is that faceting gives you an overview description of all the data that
+> is currently selected, while filtering allows you to select a subset of your data for analysis - e.g. you can also specify where to
 > place Blanks and Errors in the sorted results.
 >
 {: .callout}
@@ -99,7 +121,9 @@ specify where to place Blanks and Errors in the sorted results.
 > > did not convert the column to numbers (notice the absence of the green font). 
 > > 
 > > Another thing to note is that sorting is not an action that you can undo/redo - it does not appear on Undo/Redo tab.
-> > This is because sorting only rearranges the order of the data, it doesn't change its content.
+> > This is because sorting only rearranges the order of the data, it doesn't change its content. This means 
+> > the sorting will not change the cells in a column from text to numbers - rather, it will interpret the
+> > values as numbers for the purposes of sorting, but will keep the underlying data type unchanged.
 > {: .solution}
 {: .challenge}
 

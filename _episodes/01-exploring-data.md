@@ -1,14 +1,16 @@
 ---
 title: "Opening and Exploring Data"
-teaching: 15
-exercises: 10
+teaching: 20
+exercises: 15
 questions:
 - "How can we import our data into OpenRefine?"
 - "How can we summarise our data?"
 - "How can we find errors in our data?"
+- "How can we edit data to fix errors?"
+- "How can we convert column data from one data type to another?"
 objectives:
 - "Create a new OpenRefine project from a CSV file."
-- "Learn about different types of facets and how they are used to sort and summarise data."
+- "Learn about different types of facets and how they can be used to summarise data of different data types."
 keypoints:
 - "Faceting can identify errors or outliers in data."
 ---
@@ -58,7 +60,7 @@ in bulk.
 > Full documentation on faceting can be found at [OpenRefine Wiki: Faceting](https://github.com/OpenRefine/OpenRefine/wiki/Faceting)
 {: .callout}
 
-### Text facets
+### Text facet
 A 'text facet' groups all the identical text values in a column and lists each value with the number of records in which
 it appears. The facet information always appears in the left hand panel in the OpenRefine interface. We will use text
 faceting to look for potential errors in the `scientificName` column.
@@ -81,28 +83,6 @@ along with a number representing how many times that value occurs in the column.
 There will be several near-identical entries in `scientificName`. For example, there is one entry for `Ammospermophilis harrisi` and
 one entry for `Ammospermophilus harrisii`. These are both misspellings of `Ammospermophilus harrisi`. We will see how to correct these 
 misspelled and mistyped entries in a later exercise.  
-
-### Other types of facets
-As well as 'Text facets' OpenRefine also supports a range of other types of facet. These include:
- 
-* Numeric facets
-* Scatterplot facets
-* Timeline facets (for dates)
-* Customized facets
-
-**Numeric and scatterplot facets** display graphs instead of lists of values. The numeric facet graph includes 'drag and drop' controls you can use to set a start and end range to filter the data displayed. These facets are explored further in [Examining Numbers in OpenRefine](http://www.datacarpentry.org/OpenRefine-ecology-lesson/03-numbers/).
-
-**Customized facets** are a range of different types of facets, some of which are:
-
-* Word facet - this breaks down text into words and counts the number of records in which each word appears
-* Duplicates facet - this results in a binary facet of 'true' or 'false'. Rows appear in the 'true' facet if the value in the selected column is an exact match for a value in the same column in another row
-* Text length facet - creates a numeric facet based on the length (number of characters) of the text in each row for the selected column. This can be useful for spotting incorrect or unusual data in a field where specific lengths are expected (e.g. if the values are expected to be years, any row with a text length more than 4 for that column is likely to be incorrect)
-* Facet by blank - a binary facet of 'true' or 'false'. Rows appear in the 'true' facet if they have no data present in that column. This is useful when looking for rows missing key data.
-
-Facets are used to group together common values. OpenRefine limits the number of values allowed in a single facet to
-ensure the software does not perform slowly or run out of memory. If you create a facet where there are many unique
-values (for example, a facet on a 'book title' column in a data set that has one row per book) the facet created will be
-very large and may either slow down the application, or OpenRefine will refuse to create the facet.
 
 > ## Exercise
 >
@@ -138,3 +118,97 @@ very large and may either slow down the application, or OpenRefine will refuse t
 > data type - it will appear in green. 
 >
 {: .callout}
+
+### Facets for working with numbers
+
+When data is initially imported into OpenRefine, all the columns are treated as text values. We have seen that we can
+transform columns to other data types (e.g. number or date) using the `Edit cells` > `Common transforms` feature. Here
+we will experiment more with changing columns to numbers and see what additional capabilities this grants us.
+
+Transform cells in the `recordID` column to numbers by clicking the down arrow for the column, then `Edit cells` >
+`Common transforms…` > `To number`. You will notice the `recordID` values change from left-justified to right-justified,
+and from black to green.
+
+> ## Exercise
+>
+> Transform more columns, e.g. `period` and `yr`, from text to numbers. Can all columns be transformed to numbers?
+>
+> > ## Solution
+> >
+> > To convert to number, a column must include only numerals (0-9). If you apply a number transformation to
+> > a column that does not meet this criterion (e.g. `scientificName` column), 
+> > you might get an error and no data will be transformed (you can check this under the `Undo / Redo`
+> > tab: you will see the stage will be described `Text transform on 0 cells`.)
+> >
+> {: .solution}
+{: .challenge}
+
+Facets for working with numbers, including numeric and scatterplot facets, display graphs instead of lists of values. 
+These graphs include 'drag and drop' controls you can use to set a start and end range to filter the data displayed. 
+
+#### Numeric facet
+Sometimes there are non-numeric values or blanks in a column which could represent errors in data entry. We can use
+OpenRefine to find them with a `Numeric facet`. Remove the text facet on the `sceintificName` column before you proceed.
+
+1. For a column you have transformed to numbers, e.g. `recordID`, edit one or two cells and replace the numbers with text (such as `abc`)
+   or with a blank (i.e. no space, number or text). To do so, hover over the cell you want to modify and an `edit` button
+   will appear. Click on it and you will be able to modify the cell's value. If you receive an error `Not a valid
+   number`, try again and this time change the `Data Type` in the edit box to `Text`.
+
+   ![OpenRefine Clustering](../fig/openrefine-numeric-data.png)
+
+2. Now use the drop down menu next to the column name, select `Facet > Numeric facet` to apply a numeric facet to the 
+column you edited. The graph representing the numeric facet will appear in the left panel.
+
+   ![OpenRefine Clustering](../fig/openrefine-numeric-facet.png)
+
+3. Notice that there are several checkboxes in this facet: `Numeric`, `Non-numeric`, `Blank`, and `Error`. Below these
+   are counts showing the number of matching cells in each category. You should see checks for `Non-numeric` and `Blank`
+   if you changed some values.
+
+   ![OpenRefine Clustering](../fig/openrefine-numeric-facet-options.png)
+
+4. Experiment with checking or unchecking these boxes, and notice how this affects your data table.
+
+When you have finished examining the numeric data, remove this facet by clicking the `x` in the upper left corner of its
+panel. Note that this does not undo the edits you made to the cells in this column. If you want to reverse these edits,
+use the `Undo / Redo` function.
+
+#### Scatterplot facet
+
+Now that we have multiple columns representing numbers, we can see how they relate to one another using the scatterplot
+facet.
+
+Select a numeric column, for example `recordID`, and use the pulldown menu to > `Facet` > `Scatterplot facet`. A new
+window called `Scatterplot Matrix` will appear. It contains grids for each pair of numeric columns that have been
+plotted against each other (the number will vary
+dependent on how many columns you have transformed to numbers).
+
+![OpenRefine Scatterplot Facet](../fig/openrefine-scatterplot-facet.png)
+
+1. Examine the scatterplots overall. Do the patterns make sense?
+2. Why does the scatterplot for `recordID` vs `period` have the pattern it does?
+
+We can examine one pair of columns by clicking on its square in the `Scatterplot Matrix` A new facet with only that pair
+of columns will appear in the left margin as an interactive graph. Click in the scatterplot facet in the left margin and
+drag to highlight a rectangle. This is a very powerful way of subsetting data of interest.
+
+![OpenRefine Scatterplot Facet](../fig/openrefine-scatterplot-highlighted.png)
+
+The scatterplot `recordID` vs `period` has a slightly unexpected shape - you would probably expect a
+linear graph. Instead, there are some negative values on the `period` axis. These are potentially errors in the data.
+You can click anywhere on the graph to get rid of the subsetting.
+
+### Other types of facets
+In addition to text and numeric facets, OpenRefine also supports a range of other facet types, including 
+timeline facets (for working with dates) and a number of customized facets:
+
+* Word facet - this breaks down text into words and counts the number of records in which each word appears
+* Duplicates facet - this results in a binary facet of 'true' or 'false'. Rows appear in the 'true' facet if the value in the selected column is an exact match for a value in the same column in another row
+* Text length facet - creates a numeric facet based on the length (number of characters) of the text in each row for the selected column. This can be useful for spotting incorrect or unusual data in a field where specific lengths are expected (e.g. if the values are expected to be years, any row with a text length more than 4 for that column is likely to be incorrect)
+* Facet by blank - a binary facet of 'true' or 'false'. Rows appear in the 'true' facet if they have no data present in that column. This is useful when looking for rows missing key data.
+
+Facets are used to group together common values. OpenRefine limits the number of values allowed in a single facet to
+ensure the software does not perform slowly or run out of memory. If you create a facet where there are many unique
+values (for example, a facet on a 'book title' column in a data set that has one row per book) the facet created will be
+very large and may either slow down the application, or OpenRefine will refuse to create the facet.

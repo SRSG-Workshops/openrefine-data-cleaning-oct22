@@ -1,5 +1,5 @@
 ---
-title: "Saving Data Cleaning Steps as Scripts"
+title: "Exporting Data Cleaning Steps"
 teaching: 10
 exercises: 5
 questions:
