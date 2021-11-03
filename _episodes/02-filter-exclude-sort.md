@@ -71,25 +71,15 @@ have your facet for `scientificName`, you can use it. If you've closed that face
 
 ## Sorting data
 
-You can sort the data in a column by using the drop-down menu available in that column.
-You can sort by `text`, `numbers`, `dates` or `booleans` (i.e. `TRUE` or `FALSE` values). You can also specify where
-to place `Blanks` and `Errors` in the sorted results.
+To sort the data in a column, click the arrow next to your chosen column name and select `Sort...`. This will open a pop-up
+that will present you with different options, e.g. whether you wish to sort by `text`, `numbers`, `dates` or `booleans` 
+(i.e. `TRUE` or `FALSE` values). Additional options will appear to allow you to fine-tune your sorting.
 
-To sort, click the arrow next to your chosen column name and select `Sort...`. This will open a pop-up
-that will present you with different options, e.g. whether you wish to sort by `text`, `numbers`, etc. Additional
-options will appear to allow you to fine-tune your sorting.
-
-The first time you sort a column, the first option will present as `Sort...`. If you re-sort a column that you
-have already sorted, the drop-down menu changes slightly: the first option will be `Sort` and the following sub-options
-will be presented:
-
-* `Sort...` - This option enables you to choose a new sort. 
-* `Reverse` - This option allows you to reverse the order of the sort.
-* `Remove sort` - This option allows you to undo your sort.
+![OpenRefine Sorting](../fig/openrefine-sorting.png)
 
 > ## Exercise
 >
-> Try sorting the data by month. What happens if you sort the column as text? How can you ensure that months are in order? 
+> Try sorting the data by month using the column `mo`. What happens if you sort the column as text? How can you ensure that months are in order? 
 > > ## Solution  
 > > From the drop-down menu on the column `mo` select `Sort` then `Sort...`. Select 
 > > `Sort cell values as text` first. (Note that you can rearrange `Errors`, `Blanks` and `Valid values` so that errors and blanks
@@ -110,6 +100,14 @@ will be presented:
 > > This is because sorting only rearranges the order of the data, it doesn't change its content.
 > {: .solution}
 {: .challenge}
+
+The first time you sort a column, the first option will present as `Sort...`. If you re-sort a column that you
+have already sorted, the drop-down menu changes slightly: the first option will be `Sort` and the following sub-options
+will be presented:
+
+* `Sort...` - This option enables you to choose a new sort. 
+* `Reverse` - This option allows you to reverse the order of the sort.
+* `Remove sort` - This option allows you to undo your sort.
 
 It may not always be that obvious in OpenRefine that you performed a sort. Once you complete the sort for the first time
 a `Sort` button will appear at the top of the page as an indicator that the data has been sorted. It will disappear if
