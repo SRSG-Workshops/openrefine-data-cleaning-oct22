@@ -14,9 +14,9 @@ for the purposes of this lesson, but you can download the full dataset (see belo
 using exactly the same tools we will learn here.
  
 For this lesson, you will need to download the following file (remember where you downloaded the file!):
-*  [Portal_rodents_19772002_scinameUUIDs.csv](https://ndownloader.figshare.com/files/7823341)
+*  [portal_project_rodents.csv](data/portal_project_rodents.csv)
 
-Data in some of the columns of the above file (namely `locality`, `county`, `country`, `JSON`, `decimalLatitude` and `decimalLongitude`) are contrived for the purpose of the lessons and are in no way related to the original dataset. 
+Data in some of the columns of the above file (e.g. `geolocation`, `locality`, `county`, `country`, `JSON`) are contrived for the purpose of the lessons and are in no way related to the original dataset. 
 
 > ## For Interest Only: Portal Project Teaching Dataset
 > [The Portal Project Teaching Database](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459) is a simplified version of the 
