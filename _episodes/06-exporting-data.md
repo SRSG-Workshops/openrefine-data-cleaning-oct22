@@ -12,35 +12,16 @@ keypoints:
 - "Projects can be shared with collaborators, enabling them to see, reproduce and check all data cleaning steps you performed."
 ---
 
-## Saving and Exporting a Project
-
-OpenRefine saves your project as you work, so you don't need to worry about saving. You can export your cleaned
-data if you wish to save in a form (e.g. `csv`) more suited to further analysis. You can also export the "OpenRefine
-project", which will package together the data and all the information about the cleaning and data transformation steps
-you've performed. You can use the exported project to transfer your work to another computer, share the project with collaborators,
-archive it with your research, etc.
-
-When you open OpenRefine (or navigate to `http://localhost:3333/` from an already open project), you will see a list of your saved projects. You can click on any one of them to open them.
-
-![OpenRefine Open Project](../fig/openrefine-open-project.png)
-
-## Exporting Cleaned Data 
-
-You can export the cleaned data from OpenRefine so that it can be used by other programs. For example, you might wish
-to save the data into a `.csv` file so that you can conduct analysis with Python or R. 
-
-1. Click `Export` in the top right and select the file type you want to export
-   *  `Comma-separated values` (`csv`) is a good choice, because it's a file type that can be read by most other data
-       analysis programs. `Tab-separated values` (`tsv`) is also a popular format.
-2. The cleaned data will be exported to your default `Download` directory.
-
-Remember from [the lesson on spreadsheets](https://southampton-rsg.github.io/spreadsheets-data-organisation-and-management/)
-that using widely-supported, non-proprietary file formats like `.csv` or `.tsv` make it easier for yourself and others
-to use your data in the future. 
-
+OpenRefine saves your project as you work automatically, so you don't need to worry about saving. It saves 
+projects in a slightly obscure and hidden location 
+(check [where OpenRefine stores project data](https://docs.openrefine.org/manual/installing#set-where-data-is-stored) for different operating systems), most likely to prevent users from accidentally tempering with them. 
+You can, however, export the "OpenRefine
+project" in a location of your choice, 
+which will package together the data and all the information about the cleaning and data transformation steps
+you've performed. You can then use the exported project to transfer your work to another computer, 
+share the project with collaborators, archive it with your research, etc.
 
 ## Exporting a project
-
 1. Click the `Export` button in the top right and select `OpenRefine project archive to file`. You might be moved to a
    new blank tab in your browser might whilst this function is executing.
 
@@ -52,7 +33,6 @@ to use your data in the future.
 3. You can share the `.tar.gz` file with collaborators, or copy it to a different computer and import the project back
    into OpenRefine (say, to do further work at home). Note: sharing of this type is best performed via version control
    software, such as [Git](https://southampton-rsg.github.io/swc-git-novice/index.html).
-
 
 If you wish to investigate the files, you can double-click on the `tar.gz` file and it will expand into a directory
 (this process can be more complicated in Windows - see below for details). A folder icon will now appear. Investigate
@@ -75,11 +55,32 @@ Once you open the `.tar.gz` OpenRefine project fine, you should see:
 * a `data.zip` file. When expanded, this `zip` file includes a file called `data.txt` which is a copy of your raw data.
 You may also see other files.
 
-## Importing a project
+## Importing a new project
+You can import an exported project into OpenRefine as follows:
 
-You can now import a project into OpenRefine:
-
-1. Clicking `Open...` in the top-right of the screen, which will take you back to OpenRefine's main interface
+1. Click `Open...` in the top-right of the screen, which will take you back to OpenRefine's main interface.
 1. Select `Import Project` from the left-hand panel and, click `Choose files` and navigate to the `.tar.gz` file in the
    window that opens. Click the file and select `Open` (or just double-click the file).
 1. The project will open. It include all of the raw data and the cleaning steps that were part of the original project.
+
+## Opening an existing project
+When you open OpenRefine (or navigate to `http://localhost:3333/` from an already open project), 
+you will see a list of projects already saved on your machine that you have created or imported earlier. 
+You can click on any one of them to open them and continue working on them in OpenRefine.
+
+![OpenRefine Open Project](../fig/openrefine-open-project.png)
+
+## Exporting Cleaned Data
+You can also export just your cleaned
+data from an OpenRefine project (as opposed to the whole project), if you wish to save it in a form more suited to 
+further analysis (e.g. as CSV) and so that it can be used by other programs. For example, you might wish
+to save the data into a `.csv` file so that you can conduct further analysis using Python or R.
+
+1. Click `Export` in the top right and select the file type you want to export
+    *  `Comma-separated values` (`csv`) is a good choice, because it's a file type that can be read by most other data
+       analysis programs. `Tab-separated values` (`tsv`) is also a popular format.
+2. The cleaned data will be exported to your default `Download` directory.
+
+Using widely-supported, open, static and non-proprietary file formats like `.csv` or `.tsv` make it easier for yourself and others
+to use your data in the future. 
+

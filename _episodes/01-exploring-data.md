@@ -60,6 +60,12 @@ in bulk.
 > Full documentation on faceting can be found at [OpenRefine Wiki: Faceting](https://github.com/OpenRefine/OpenRefine/wiki/Faceting)
 {: .callout}
 
+OpenRefine supports a range of facets, including:
+- Text facet for working with textual data, 
+- Numeric and Scatterplot facets for working with numeric data,
+- Timeline facet for working with dates, and
+- number of customized facets (some of which we will cover shortly).
+
 ### Text facet
 A 'text facet' groups all the identical text values in a column and lists each value with the number of records in which
 it appears. The facet information always appears in the left hand panel in the OpenRefine interface. We will use text
@@ -96,16 +102,19 @@ misspelled and mistyped entries in a later exercise.
 > > 
 > > 1. For the column `yr` do `Facet` > `Text facet`. A box will appear in the left panel showing that there are 26 unique entries in
 > >    this column.  
-> > 2. You may have noticed that a numeric facet did not work on the column. By default, the columns in OpenRefine are
+> > 2. If you try to apply a Numeric facet on the same column, you may notice that it won't work. This is because, by default, all columns in OpenRefine are
 > >    formatted as text.
-> > 3. You can change the format to numbers by selecting the down arrow next to
+> > 3. You can change the data format to numbers by selecting the down arrow next to
 > >    the `yr` column name, selecting `Edit cells` > `Common transforms` > `To number`. Notice when this change was
 > >    applied that the values in the column changed from black to green, and from left-justified to right-justified. 
 > >    If you now select `Facet` > `Numeric facet` on column `yr`, a new box is created that shows a histogram of the number of 
 > >    entries per year. Notice that the data is shown as a number, not a date.
-> > 4. You can also transform the column to a date by selecting `Edit cells` > `Common transforms` > `To date`. Note the
-> >    program will assume all entries take place on 1st January of the year. You can now choose a timeline facet.
-> > 5. Click `Sort by count` in the text facet box to order the counts numerically. The year with the most observations
+> > 4. You can also transform the column data type to be date by selecting `Edit cells` > `Common transforms` > `To date`. Note the
+> >    program will assume all entries take place on 1st January of the year. You can now choose a Timeline facet. If 
+> >    you change the date to date data type, undo that action from the Undo/Redo tab to revert to the numeric data 
+> >    type before moving on to the next step. 
+> >    We will cover undoing/redoing actions in more detail shortly.
+> > 5. Click `Sort by count` in the Text facet box to order the counts numerically. The year with the most observations
 >      is 1997, and the year with the least is 1977. 
 > > 
 > {: .solution}
@@ -121,9 +130,10 @@ misspelled and mistyped entries in a later exercise.
 
 ### Facets for working with numbers
 
-When data is initially imported into OpenRefine, all the columns are treated as text values. We have seen that we can
+As we have seen in the previous exercise, when data is initially imported into OpenRefine, 
+all the columns are treated as text values. We have seen that we can
 transform columns to other data types (e.g. number or date) using the `Edit cells` > `Common transforms` feature. Here
-we will experiment more with changing columns to numbers and see what additional capabilities this grants us.
+we will experiment more with changing columns to numbers to see what additional capabilities this grants us.
 
 Transform cells in the `recordID` column to numbers by clicking the down arrow for the column, then `Edit cells` >
 `Common transforms…` > `To number`. You will notice the `recordID` values change from left-justified to right-justified,
@@ -131,7 +141,7 @@ and from black to green.
 
 > ## Exercise
 >
-> Transform more columns, e.g. `period` and `yr`, from text to numbers. Can all columns be transformed to numbers?
+> Transform more columns, e.g. `recordID` and `yr`, from text to numbers. Can all columns be transformed to numbers?
 >
 > > ## Solution
 > >
@@ -148,7 +158,8 @@ These graphs include 'drag and drop' controls you can use to set a start and end
 
 #### Numeric facet
 Sometimes there are non-numeric values or blanks in a column which could represent errors in data entry. We can use
-OpenRefine to find them with a `Numeric facet`. Remove the text facet on the `sceintificName` column before you proceed.
+OpenRefine to find them with a `Numeric facet`. Remove the facets we created previously before you proceed to gain 
+more space.
 
 1. For a column you have transformed to numbers, e.g. `recordID`, edit one or two cells and replace the numbers with text (such as `abc`)
    or with a blank (i.e. no space, number or text). To do so, hover over the cell you want to modify and an `edit` button
@@ -200,8 +211,8 @@ linear graph. Instead, there are some negative values on the `period` axis. Thes
 You can click anywhere on the graph to get rid of the subsetting.
 
 ### Other types of facets
-In addition to text and numeric facets, OpenRefine also supports a range of other facet types, including 
-timeline facets (for working with dates) and a number of customized facets:
+In addition to Text, Numeric, Scatterplot and Timeline facets, OpenRefine also supports a 
+range of customized facets:
 
 * Word facet - this breaks down text into words and counts the number of records in which each word appears
 * Duplicates facet - this results in a binary facet of 'true' or 'false'. Rows appear in the 'true' facet if the value in the selected column is an exact match for a value in the same column in another row

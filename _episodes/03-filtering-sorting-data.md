@@ -65,7 +65,7 @@ and reinstate the text facet on the `scientificName` column.
 
    ![OpenRefine Filtering](../fig/openrefine-filtering.png)
 
-3. Near the top of the screen, change `Show:` to 50. This way you will allow you to see all the matching rows.
+3. Near the top of the screen, change `Show:` to 50. This way, you will see all the matching rows in a single page.
 
 > ## Exercise
 >
@@ -74,11 +74,12 @@ and reinstate the text facet on the `scientificName` column.
 >
 > > ## Solution
 > > 1. If you kept a text facet over `scientificName` from before - it will show that
-       > > two names match your filter criteria are: `Baiomys taylori` and `Chaetodipus baileyi`. If you have closed
-       > > the text facet, select `Facet` > `Text facet` on the `scientificName` column.
+> > two names match your filter criteria are: `Baiomys taylori` and `Chaetodipus baileyi`. If you have closed
+> > the text facet, select `Facet` > `Text facet` on the `scientificName` column to reinstate it.
 > > 2. There are various options to restrict to only one of the two species identified. You could make the search case sensitive.
-       > > You could split the `scientificName` column into species and genus columns, as before, and filter only the column of interest.
-       > > You could include more letters in your filter, e.g. `baio` which would exclude `Chaetodipus baileyi`. Try playing with these different options.
+> > You could split the `scientificName` column into species and genus columns, as before, and filter only the column of interest.
+> > You could include more letters in your filter, e.g. `baio` which would exclude `Chaetodipus baileyi`. Try playing with these different options.
+> > You could include more letters in your filter, e.g. `baio` which would exclude `Chaetodipus baileyi`. Try playing with these different options.
 > >
 > {: .solution}
 {: .challenge}
@@ -86,13 +87,14 @@ and reinstate the text facet on the `scientificName` column.
 **Important:** Make sure both species are included in your filtered dataset before continuing with the rest of the exercises.
 
 >## Filters vs. facets
-> Faceting and filtering look very similar. A good distinction is that faceting gives you an overview description of all the data that
-> is currently selected, while filtering allows you to select a subset of your data for analysis - e.g. you can also specify where to
-> place Blanks and Errors in the sorted results.
+> Faceting and filtering look very similar. A good distinction is that faceting gives you an overview of all the data that
+> is currently selected, while filtering allows you to select a subset of your data for further inspection and analysis.
 >
 {: .callout}
 
 ## Sorting data
+Sorting data is a useful practice for detecting outliers in data - potential errors and blanks 
+will sort to the top or the bottom of your data. 
 
 To sort the data in a column, click the arrow next to your chosen column name and select `Sort...`. This will open a pop-up
 that will present you with different options, e.g. whether you wish to sort by `text`, `numbers`, `dates` or `booleans` 
@@ -144,12 +146,12 @@ you remove the sort.
 > ## Exercise
 > 
 > Remove the sort by month. Make sure you still have the text filter for the text "bai" on the `scientificName` column present 
-> (if you have lost your text filter for "bai" see the start of the lesson to help you reinstate it). Then sort the data by `plot`. In which year(s) were observations recorded for plot 1 in the
+> (if you have lost your text filter for "bai" see the start of the episode to help you reinstate it). Then sort the data by `plot`. In which year(s) were observations recorded for plot 1 in the
 > filtered dataset? 
 > 
 > > ## Solution
-> > In the `plot` column, select `Sort...` > `numbers` and select `smallest first`. The years observations were recorded
-> in plot 1 are 1990 and 1995.
+> > From the drop-down menu on the column `plot` select `Sort...` then `Sort cell values as numbers` and `smallest first`. 
+> > The years observations were recorded in plot 1 are 1990 and 1995.
 > > 
 > {: .solution}
 {: .challenge}
@@ -169,12 +171,17 @@ alone` box in the `Sort` pop-up menu.
 > 
 > > ## Solution
 > > 
-> > 1. To sort by month, click on `Sort...` from the `mo` column, and then select `numbers`. This will group all entries made in, for example, January,
+> > 1. To sort by month, click on `Sort...` from the `mo` column, and then select `Sort cell values as numbers`. 
+> > This will group all entries made in, for example, January,
 > > together, regardless of which year that entry was collected.  
-> > 2. To sort chronologically, click on `Sort` > `Sort...` from the `yr` column , and then select `numbers`. Before
-> > clicking 'OK' make sure you select `sort by this column alone` to start a new sort from scratch. You can now apply
-> > an additional sort, this time by month (click on `Sort` from the `mo` column, and then select `numbers`). To ensure
-> > that all entries are shown chronologically, you will need to add a third sorting step by day (using column `dy`). 
+> > 2. To sort chronologically, click on `Sort` > `Sort...` from the `yr` column , and then select 
+> > `Sort cell values as numbers`. Before
+> > clicking 'OK' make sure you select `sort by this column alone` to start a new sort from scratch. 
+> > 3. You can now apply
+> > an additional sort, this time by month (click on `Sort` from the `mo` column, and then select 
+> > `Sort cell values as numbers`). 
+> > 4. To ensure
+> > that all entries are shown chronologically, you will need to add a third sorting step to sort data by day (using the column `dy`). 
 > > 
 > {: .solution}  
 {: .challenge}
@@ -187,11 +194,11 @@ your multiple sort. If it is the only column sorted, then the data revert to the
 > Sort by `year`, `month` and `day` in some order. Be creative: try sorting as `numbers` or `text`, and in reverse order
 > (`largest to smallest` or `z to a`).
 >
-> Use > `Sort` > `Remove sort` to remove the sort on the second of three columns. Notice how that changes the order.
+> Use `Sort` > `Remove sort` to remove the sort on the second of three columns. Notice how that changes the order.
 {: .challenge}
 
 >## Sorting does not change data
-> You may have noticed that after any of the sorting steps there is nothing to undo/redo. This is because you have only 
+> You may have noticed that after any of the sorting steps there was nothing to undo/redo. This is because you have only 
 > reordered and not modified you data. If you want to revert to the original order of the data - make sure you remove all
 > "sorts" using the `Sort` > `Remove sort` option. 
 {: .callout}
