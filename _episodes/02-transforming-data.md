@@ -206,9 +206,13 @@ when creating a new column based off it.
    representing the extracted longitude and latitude values respectively.
 6. Rename your new columns to `longitude` and `latitude` accordingly. You can now make further use of the extracted data from 
 other applications, e.g. plot geolocations on a map.
+ 
+GREL offers [rich syntax and a large number of functions](https://docs.openrefine.org/manual/grelfunctions) 
+for complex string manipulations (and handling different text formats - JSON, HTML, XML), 
+working with numbers, dates and boolean (TRUE/FALSE) values, logical and mathematical operations. We 
+strongly recommend learning more on GREL syntax and functionalities.
 
 > ## GREL documentation
-> GREL offers rich syntax for complex string manipulations, boolean functions and mathematical operations - 
-> check the [official GREL documentation](https://docs.openrefine.org/manual/grel) for the full reference. 
+> Check the [official GREL documentation](https://docs.openrefine.org/manual/grel) for the full reference on GREL. 
 > Here is [another useful GREL guide](https://guides.library.illinois.edu/openrefine/grel) to check out.
 {: .callout}
