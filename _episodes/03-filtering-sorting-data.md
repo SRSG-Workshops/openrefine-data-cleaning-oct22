@@ -1,5 +1,6 @@
 ---
 title: "Filtering and Sorting Data"
+slug: openrefine-data-cleaning-filtering-and-sorting-data
 teaching: 20
 exercises: 10
 questions:

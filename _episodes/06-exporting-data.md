@@ -1,5 +1,6 @@
 ---
 title: "Exporting and Saving Data"
+slug: openrefine-data-cleaning-exporting-and-saving-data
 teaching: 10
 exercises: 5
 questions:

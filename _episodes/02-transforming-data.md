@@ -1,5 +1,6 @@
 ---
 title: "Transforming Data"
+slug: openrefine-data-cleaning-transforming-data
 teaching: 30
 exercises: 10
 questions:
