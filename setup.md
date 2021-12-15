@@ -62,4 +62,10 @@ Once it is running on your machine, you access it via your browser at the addres
 
 ## Now what?
 
-Once you've downloaded the file above, you can [start the lesson](https://southampton-rsg.github.io/openrefine-data-cleaning/00-getting-started/index.html).
+{% if site.carpentry == "rsg" %}
+    {% assign lessonlink = "openrefine-data-cleaning-introduction" %}
+{% else %}
+    {% assign lessonlink = "https://southampton-rsg.github.io/openrefine-data-cleaning/00-getting-started/index.html" %}
+{% endif %}
+
+Once you've downloaded the file above, you can [start the lesson]({{ lessonlink }}).
