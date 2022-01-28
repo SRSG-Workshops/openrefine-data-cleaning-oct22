@@ -1,5 +1,6 @@
 ---
 title: "Further Resources on OpenRefine"
+slug: openrefine-data-cleaning-further-resources-on-openrefine
 teaching: 5
 exercises: 0
 questions:

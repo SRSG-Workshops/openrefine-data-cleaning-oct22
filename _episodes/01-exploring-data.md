@@ -1,5 +1,6 @@
 ---
 title: "Opening and Exploring Data"
+slug: openrefine-data-cleaning-opening-and-exploring-data
 teaching: 20
 exercises: 15
 questions:

@@ -1,5 +1,6 @@
 ---
 title: "Introduction"
+slug: openrefine-data-cleaning-introduction
 teaching: 15
 exercises: 0
 questions:

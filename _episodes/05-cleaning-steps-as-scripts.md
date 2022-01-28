@@ -1,5 +1,6 @@
 ---
 title: "Exporting Data Cleaning Steps"
+slug: openrefine-data-cleaning-exporting-data-cleaning-steps
 teaching: 10
 exercises: 5
 questions:
