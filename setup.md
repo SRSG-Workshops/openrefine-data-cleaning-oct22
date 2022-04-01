@@ -1,4 +1,4 @@
-# Setup for OpenRefine Data Cleaning Lesson
+# Setup for Shell Lesson
 ## Introduction to the Data for this Lesson ##
 The data used in this lesson comes from a project observing a small mammal community in southern
 Arizona, US. This is part of a project studying the effects of rodents and ants on the plant
@@ -55,3 +55,11 @@ Once it is running on your machine, you access it via your browser at the addres
 - Check that you have Firefox or Chrome browser installed and set as your default browser. You can check how to set your browser as default for [Google Chrome](https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en-GB) or [Firefox](https://support.mozilla.org/en-US/kb/make-firefox-your-default-browser).
 - Unzip the downloaded file into a directory. Go to this directory from terminal and type ./refine to start.
 - Wait for OpenRefine to launch in your default Web browser, which is where you will interact with the program. If this does not happen, head to [http://localhost:3333](http://localhost:3333) in your Web browser of choice.
+## Text Editor ##
+
+A text editor is the piece of software you use to view and write code. If you
+have a preferred text editor, please use it. Suggestions for text editors are,
+Notepad++ (Windows), TextEdit (macOS), Gedit (GNU/Linux), GNU Nano, Vim.
+Alternatively, there are IDE's (integrated developer environments) that have
+more features specifically for coding such as VS Code; there are also IDEs
+specific to languages will be listed in the appropriate section(s) below.
