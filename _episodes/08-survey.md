@@ -1,8 +1,7 @@
 ---
 title: "Survey"
-slug: "lesson-survey"
-teaching: 0
-exercises: 0
+slug: Data Cleaning with OpenRefine-survey
+layout: page
 ---
 
 {% if site.startdate == "TBC" %}
