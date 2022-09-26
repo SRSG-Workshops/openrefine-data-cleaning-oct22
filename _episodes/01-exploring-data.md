@@ -116,10 +116,11 @@ misspelled and mistyped entries in a later exercise.
 > >    type before moving on to the next step. 
 > >    We will cover undoing/redoing actions in more detail shortly.
 > > 5. Click `Sort by count` in the Text facet box to order the counts numerically. The year with the most observations
->      is 1997, and the year with the least is 1977. 
+> >     is 1997, and the year with the least is 1977. 
 > > 
-> {: .solution}
-{: .challenge}
+> > {: .solution}
+> 
+> {: .challenge}
 
 > ## Default data type 
 >
@@ -151,8 +152,9 @@ and from black to green.
 > > you might get an error and no data will be transformed (you can check this under the `Undo / Redo`
 > > tab: you will see the stage will be described `Text transform on 0 cells`.)
 > >
-> {: .solution}
-{: .challenge}
+> > {: .solution}
+>
+> {: .challenge}
 
 Facets for working with numbers, including numeric and scatterplot facets, display graphs instead of lists of values. 
 These graphs include 'drag and drop' controls you can use to set a start and end range to filter the data displayed. 
