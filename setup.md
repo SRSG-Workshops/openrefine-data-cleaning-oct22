@@ -17,6 +17,8 @@ This is a real dataset that has been used in over 100 publications. It is publis
 > **CITATION:** Ernest, Morgan; Brown, James; Valone, Thomas; White, Ethan P. (2017): Portal Project Teaching Database. Figshare. [https://doi.org/10.6084/m9.figshare.1314459.v6](https://doi.org/10.6084/m9.figshare.1314459.v6)
 {: .testimonial}
 
+## Download Data for OpenRefine Lesson ##
+
 The Portal Project Teaching Dataset is a real dataset that has been used in over 100 publications. We have simplified it
 for the purposes of this lesson, but you can download the full dataset (see below for details) and work with it
 using exactly the same tools we will learn here.
@@ -31,8 +33,8 @@ For this lesson you will need [OpenRefine](http://openrefine.org/) (formerly Goo
 Download the most recent version of [OpenRefine](http://openrefine.org/download.html) for your operating system,
 then follow the instructions below.
 
-[OpenRefine](http://openrefine.org/) is a Java program that runs locally on your machine (i.e. you are not accessing a remote service on the Internet). Most recent versions of
-OpenRefine for Windows and Mac come with embedded Java, in which case you do not need a separate Java installation.
+[OpenRefine](http://openrefine.org/) is a Java program that runs locally on your machine (i.e. you are not accessing a remote service on the Internet). 
+OpenRefine for Mac come with embedded Java, on Windows please select Windows kit with embedded Java, on Linux you will need to install Java separately.
 
 Once it is running on your machine, you access it via your browser at the address [http://localhost:3333](http://localhost:3333). No Internet connection is needed for this as the programme is running locally.
 
