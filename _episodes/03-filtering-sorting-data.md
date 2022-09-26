@@ -50,10 +50,12 @@ You can also filter data using other types of facets - let's do it as an exercis
 > > potentially wrong with our data as values for `period` in the filtered subset 
 > > are negative (we are expecting only positive values) and potentially require futher examination and cleaning.
 > >
->   ![OpenRefine Scatterplot Filter](fig/scatterplot-filter.png)
+> > ![OpenRefine Scatterplot Filter](fig/scatterplot-filter.png)
 > >
-> {: .solution}
-{: .challenge}
+> > 
+> > {: .solution}
+> 
+> {: .challenge}
 
 ### Text filters
 Another way to filter data is to create a text filter on a column. Close all facets you may have created previously 
@@ -82,16 +84,16 @@ and reinstate the text facet on the `scientificName` column.
 > > You could include more letters in your filter, e.g. `baio` which would exclude `Chaetodipus baileyi`. Try playing with these different options.
 > > You could include more letters in your filter, e.g. `baio` which would exclude `Chaetodipus baileyi`. Try playing with these different options.
 > >
-> {: .solution}
-{: .challenge}
+> > {: .solution}
+> 
+> {: .challenge}
 
 **Important:** Make sure both species are included in your filtered dataset before continuing with the rest of the exercises.
 
 >## Filters vs. facets
 > Faceting and filtering look very similar. A good distinction is that faceting gives you an overview of all the data that
 > is currently selected, while filtering allows you to select a subset of your data for further inspection and analysis.
->
-{: .callout}
+> {: .callout}
 
 ## Sorting data
 Sorting data is a useful practice for detecting outliers in data - potential errors and blanks 
@@ -107,16 +109,17 @@ specify where to place Blanks and Errors in the sorted results.
 > ## Exercise
 >
 > Try sorting the data by month using the column `mo`. What happens if you sort the column as text? How can you ensure that months are in order? 
+> 
 > > ## Solution  
 > > From the drop-down menu on the column `mo` select `Sort` then `Sort...`. Select 
 > > `Sort cell values as text` first. (Note that you can rearrange `Errors`, `Blanks` and `Valid values` so that errors and blanks
 > > will sort to the top. This is a good practice detect some outliers.)      
 > >
->   ![OpenRefine Sorting](fig/openrefine-sorting.png)
+> > ![OpenRefine Sorting](fig/openrefine-sorting.png)
 > >
-> > You will notice that values for month have been sorted in alphabetical order, where months 10, 11 and 12 came before month 2. 
+> > You will notice that values for month have been sorted in alphabetical order, where months 10, 11 and 12 came before month > > 2. 
 > >
->   ![OpenRefine Sorting](fig/openrefine-sort-as-text.png)
+> > ![OpenRefine Sorting](fig/openrefine-sort-as-text.png)
 > >  
 > > This is probably not what you wanted - so you will have to redo the sort and select the `Sort cell values as number` option.
 > > 
@@ -127,8 +130,10 @@ specify where to place Blanks and Errors in the sorted results.
 > > This is because sorting only rearranges the order of the data, it doesn't change its content. This means 
 > > the sorting will not change the cells in a column from text to numbers - rather, it will interpret the
 > > values as numbers for the purposes of sorting, but will keep the underlying data type unchanged.
-> {: .solution}
-{: .challenge}
+> > 
+> > {: .solution}
+> 
+> {: .challenge}
 
 The first time you sort a column, the first option will present as `Sort...`. If you re-sort a column that you
 have already sorted, the drop-down menu changes slightly: the first option will be `Sort` and the following sub-options
@@ -154,8 +159,9 @@ you remove the sort.
 > > From the drop-down menu on the column `plot` select `Sort...` then `Sort cell values as numbers` and `smallest first`. 
 > > The years observations were recorded in plot 1 are 1990 and 1995.
 > > 
-> {: .solution}
-{: .challenge}
+> > {: .solution}
+> 
+> {: .challenge}
 
 ### Sorting by multiple columns
 
@@ -184,8 +190,9 @@ alone` box in the `Sort` pop-up menu.
 > > 4. To ensure
 > > that all entries are shown chronologically, you will need to add a third sorting step to sort data by day (using the column `dy`). 
 > > 
-> {: .solution}  
-{: .challenge}
+> > {: .solution}  
+> 
+> {: .challenge}
 
 If you go back to one of the already sorted columns and select `Sort` > `Remove sort`, that column is removed from
 your multiple sort. If it is the only column sorted, then the data revert to their original order.
@@ -196,10 +203,10 @@ your multiple sort. If it is the only column sorted, then the data revert to the
 > (`largest to smallest` or `z to a`).
 >
 > Use `Sort` > `Remove sort` to remove the sort on the second of three columns. Notice how that changes the order.
-{: .challenge}
+> {: .challenge}
 
 >## Sorting does not change data
 > You may have noticed that after any of the sorting steps there was nothing to undo/redo. This is because you have only 
 > reordered and not modified you data. If you want to revert to the original order of the data - make sure you remove all
 > "sorts" using the `Sort` > `Remove sort` option. 
-{: .callout}
+> {: .callout}
